@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0e14" />
+  <title>Blank &mdash; Live playground</title>
+  <meta name="description" content="A working blank-page playground with live HTML, CSS and JavaScript preview, console and command palette." />
+  <link rel="icon" href="../../assets/icons/favicon-64.png" />
+  <link rel="stylesheet" href="../demo.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="demo-bar">
+    <a class="demo-brand" href="../../index.html"><img src="../../assets/icons/nav-icon.png" alt="" width="24" height="24" />Prince Studio</a>
+    <span class="demo-label">Blank template</span>
+    <span class="demo-actions">
+      <a href="../../index.html#templates">All templates</a>
+      <a class="demo-cta" href="../../downloads/Prince-Studio-v1.0.0.apk" download>Get the app</a>
+    </span>
+  </div>
+
+  <main class="bl-app">
+    <div class="bl-bar">
+      <div class="bl-bar-left">
+        <span class="bl-logo">Blank<span>.</span></span>
+        <span class="bl-project"><i></i>untitled-playground <b>local</b></span>
+        <span class="bl-save" id="bl-save"><i></i>Autosaved</span>
+      </div>
+      <div class="bl-bar-actions">
+        <div class="bl-viewports" role="group" aria-label="Preview width">
+          <button class="is-active" type="button" data-viewport="desktop" aria-pressed="true" aria-label="Desktop preview">
+            <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5" fill="none" stroke="currentColor"/><path d="M5.5 14h5M8 11.5V14" stroke="currentColor"/></svg>
+          </button>
+          <button type="button" data-viewport="mobile" aria-pressed="false" aria-label="Mobile preview">
+            <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><rect x="4.5" y="1.5" width="7" height="13" rx="1.5" fill="none" stroke="currentColor"/><path d="M7 12.5h2" stroke="currentColor"/></svg>
+          </button>
+        </div>
+        <button class="bl-kbd-btn" type="button" data-action="palette" aria-label="Open command palette">
+          <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M2.5 5.5h11M2.5 10.5h11M5.5 2.5v11M10.5 2.5v11" fill="none" stroke="currentColor" stroke-linecap="round"/></svg>
+          <span>Commands</span>
+          <kbd>Ctrl K</kbd>
+        </button>
+        <button class="bl-btn bl-btn-reset" type="button" data-action="reset">Reset</button>
+        <button class="bl-btn bl-btn-download" type="button" data-action="download">Download</button>
+        <button class="bl-run" type="button" data-action="run">Run <span>Ctrl &#8629;</span></button>
+      </div>
+    </div>
+
+    <div class="bl-workspace" id="bl-workspace">
+      <section class="bl-editor" aria-label="Code editor">
+        <div class="bl-tabs" role="tablist" aria-label="Files">
+          <button class="is-active" type="button" role="tab" aria-selected="true" aria-controls="bl-code-html" id="bl-tab-html" data-file="html"><i></i>index.html</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="bl-code-css" id="bl-tab-css" data-file="css"><i></i>style.css</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="bl-code-js" id="bl-tab-js" data-file="js"><i></i>script.js</button>
+        </div>
+
+        <div class="bl-code-wrap">
+          <textarea class="bl-code is-active" id="bl-code-html" data-editor="html" aria-labelledby="bl-tab-html" spellcheck="false">&lt;main class="card"&gt;
+  &lt;span class="eyebrow"&gt;Blank starter / 01&lt;/span&gt;
+  &lt;h1&gt;Make something&lt;br /&gt;&lt;em&gt;good.&lt;/em&gt;&lt;/h1&gt;
+  &lt;p&gt;A tiny starting point. Edit the HTML, CSS and JS on the left. The preview updates as you type.&lt;/p&gt;
+  &lt;button id="hello"&gt;Say hello &lt;span&gt;&#8599;&lt;/span&gt;&lt;/button&gt;
+  &lt;p id="out" role="status"&gt;&lt;/p&gt;
+&lt;/main&gt;</textarea>
+          <textarea class="bl-code" id="bl-code-css" data-editor="css" aria-labelledby="bl-tab-css" spellcheck="false" hidden>:root {
+  --ink: #17211a;
+  --paper: #eef1e7;
+  --accent: #4f6b39;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 32px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.card {
+  width: min(100%, 560px);
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-family: Consolas, monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 22px 0 16px;
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 9vw, 82px);
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+}
+
+h1 em {
+  color: var(--accent);
+  font-weight: 400;
+}
+
+p {
+  max-width: 420px;
+  margin: 0;
+  color: #5c6759;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+button {
+  margin-top: 22px;
+  padding: 13px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover { background: var(--accent); }
+
+#out {
+  min-height: 20px;
+  margin-top: 18px;
+  color: var(--accent);
+  font-family: Consolas, monospace;
+  font-size: 10px;
+  letter-spacing: 0.03em;
+}</textarea>
+          <textarea class="bl-code" id="bl-code-js" data-editor="js" aria-labelledby="bl-tab-js" spellcheck="false" hidden>const button = document.querySelector('#hello');
+const out = document.querySelector('#out');
+
+button.addEventListener('click', () =&gt; {
+  button.textContent = 'Hello, builder.';
+  out.textContent = 'Preview is live - keep going. ' + new Date().toLocaleTimeString();
+});
+
+console.log('Blank preview ready');</textarea>
+        </div>
+
+        <div class="bl-console" id="bl-console">
+          <button class="bl-console-head" id="bl-console-toggle" type="button" aria-expanded="false" aria-controls="bl-console-body">
+            <span class="bl-console-title"><i></i>Console <b id="bl-console-count">0</b></span>
+            <span class="bl-console-last" id="bl-console-last">No output yet</span>
+            <span class="bl-console-chevron" aria-hidden="true"></span>
+          </button>
+          <div class="bl-console-body" id="bl-console-body">
+            <div class="bl-console-tools"><span>Preview logs</span><button type="button" data-action="clear-console">Clear</button></div>
+            <div class="bl-console-output" id="bl-console-output" role="log" aria-live="polite">
+              <p class="bl-console-empty">Console ready. Logs from your preview appear here.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bl-editor-foot">
+          <span id="bl-file-status">HTML / UTF-8 / Spaces: 2</span>
+          <span class="bl-foot-keys"><kbd>Ctrl</kbd><kbd>`</kbd> console</span>
+        </div>
+      </section>
+
+      <div class="bl-resizer" id="bl-resizer" role="separator" aria-orientation="vertical" aria-label="Resize editor and preview" aria-valuemin="30" aria-valuemax="70" aria-valuenow="47" tabindex="0"></div>
+
+      <section class="bl-preview" id="bl-preview" aria-label="Live preview">
+        <div class="bl-preview-bar">
+          <span class="bl-preview-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="bl-url"><svg viewBox="0 0 16 16" width="10" height="10" aria-hidden="true"><rect x="3" y="7" width="10" height="7" rx="1.5" fill="none" stroke="currentColor"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2" fill="none" stroke="currentColor"/></svg>preview.html</span>
+          <span class="bl-preview-actions">
+            <button type="button" data-action="fullscreen" aria-label="Toggle fullscreen preview" aria-pressed="false" title="Toggle fullscreen preview">
+              <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M6 2H2v4M10 2h4v4M6 14H2v-4M10 14h4v-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" data-action="reload" aria-label="Reload preview" title="Reload preview">
+              <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M13 8a5 5 0 1 1-1.5-3.5M13 2.5V6H9.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" data-action="open" aria-label="Open preview in new tab" title="Open in new tab">
+              <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M6 3H3.5A1.5 1.5 0 0 0 2 4.5v8A1.5 1.5 0 0 0 3.5 14h8a1.5 1.5 0 0 0 1.5-1.5V10M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </span>
+        </div>
+        <div class="bl-stage">
+          <iframe class="bl-frame" id="bl-frame" title="Live preview" sandbox="allow-scripts allow-forms allow-modals allow-popups"></iframe>
+        </div>
+      </section>
+    </div>
+
+    <div class="bl-status">
+      <span class="bl-status-state"><i></i>Ready</span>
+      <span class="bl-status-meta"><span id="bl-cursor">Ln 1, Col 1</span><span id="bl-size">0 chars</span><span id="bl-lines">0 lines</span></span>
+      <span id="bl-status-right">Ctrl / Cmd + Enter to run</span>
+    </div>
+  </main>
+
+  <dialog class="bl-palette" id="bl-palette" aria-labelledby="bl-palette-title">
+    <div class="bl-palette-top">
+      <span id="bl-palette-title">Command palette</span>
+      <button type="button" data-action="palette-close" aria-label="Close command palette">Esc</button>
+    </div>
+    <div class="bl-palette-search">
+      <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor"/><path d="m10.5 10.5 3 3" stroke="currentColor" stroke-linecap="round"/></svg>
+      <input id="bl-palette-input" type="text" placeholder="Type a command or search..." autocomplete="off" spellcheck="false" aria-label="Search commands" />
+    </div>
+    <div class="bl-palette-list" id="bl-palette-list" role="listbox" aria-label="Commands"></div>
+    <div class="bl-palette-foot">
+      <span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span>
+      <span><kbd>&crarr;</kbd> select</span>
+      <span id="bl-palette-count">10 commands</span>
+    </div>
+  </dialog>
+
+  <div class="bl-toast" id="bl-toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

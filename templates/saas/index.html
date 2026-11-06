@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f3f7ff" />
+  <title>Shipfast &mdash; SaaS template</title>
+  <meta name="description" content="A sharp SaaS landing page template with an interactive dashboard, bento features and pricing." />
+  <link rel="icon" href="../../assets/icons/favicon-64.png" />
+  <link rel="stylesheet" href="../demo.css" />
+  <link rel="stylesheet" href="style.css" />
+  <noscript><style>.sa-reveal{opacity:1 !important;transform:none !important}</style></noscript>
+</head>
+<body>
+  <div class="demo-bar">
+    <a class="demo-brand" href="../../index.html"><img src="../../assets/icons/nav-icon.png" alt="" width="24" height="24" />Prince Studio</a>
+    <span class="demo-label">SaaS template</span>
+    <span class="demo-actions">
+      <a href="../../index.html#templates">All templates</a>
+      <a class="demo-cta" href="../../downloads/Prince-Studio-v1.0.0.apk" download>Get the app</a>
+    </span>
+  </div>
+
+  <div class="sa-scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="sa-header">
+    <div class="sa-wrap sa-nav">
+      <a class="sa-brand" href="#top">
+        <span class="sa-mark" aria-hidden="true"><i></i></span>
+        Shipfast
+      </a>
+      <button class="sa-toggle" type="button" aria-expanded="false" aria-controls="sa-menu" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="sa-links" id="sa-menu" aria-label="Primary">
+        <a href="#product">Product</a>
+        <a href="#features">Features</a>
+        <a href="#customers">Customers</a>
+        <a href="#pricing">Pricing</a>
+        <span class="sa-nav-cta">
+          <a href="#pricing">Log in</a>
+          <a class="sa-nav-primary" href="#signup">Start free</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="sa-hero">
+      <span class="sa-hero-grid" aria-hidden="true"></span>
+      <span class="sa-hero-glow" aria-hidden="true"></span>
+      <div class="sa-wrap sa-hero-inner">
+        <a class="sa-pill" href="#features">
+          <span>New</span>
+          AI release notes are live
+          <i aria-hidden="true">&#8599;</i>
+        </a>
+        <h1>Ship faster.<br /><span>Look sharp.</span></h1>
+        <p>The release platform for teams who care about the details. Plan, build and announce every update from one calm workspace.</p>
+
+        <form class="sa-signup" id="sa-signup" novalidate>
+          <label class="sr-only" for="sa-email">Work email</label>
+          <input id="sa-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+          <button type="submit">Start free</button>
+        </form>
+        <p class="sa-signup-note" id="sa-signup-note" role="status" aria-live="polite">Free for 14 days &middot; No credit card</p>
+
+        <div class="sa-window" id="product">
+          <div class="sa-window-bar">
+            <span class="sa-dots"><i></i><i></i><i></i></span>
+            <span class="sa-url">app.shipfast.dev/releases</span>
+            <span class="sa-live"><i></i>Live</span>
+          </div>
+          <div class="sa-app">
+            <aside class="sa-side">
+              <div class="sa-side-brand"><span class="sa-mark"><i></i></span>Shipfast</div>
+              <nav aria-label="Dashboard">
+                <span class="is-active"><i></i>Overview</span>
+                <span><i></i>Releases</span>
+                <span><i></i>Insights</span>
+                <span><i></i>Changelog</span>
+              </nav>
+              <div class="sa-side-usage">
+                <span>Monthly usage</span>
+                <strong>74%</strong>
+                <i><b></b></i>
+              </div>
+              <div class="sa-side-user"><span>AK</span><div><strong>Anika Kapoor</strong><small>Pro workspace</small></div></div>
+            </aside>
+
+            <div class="sa-main">
+              <div class="sa-main-head">
+                <div>
+                  <span>Tuesday, 4 November</span>
+                  <h2>Good morning, Anika.</h2>
+                </div>
+                <div class="sa-main-actions">
+                  <button type="button" class="sa-icon-btn" aria-label="Notifications">3</button>
+                  <button type="button" class="sa-new-release" data-open-release>New release <b>+</b></button>
+                </div>
+              </div>
+
+              <div class="sa-metrics">
+                <div><span>Deploys this week</span><strong>18</strong><small class="up">&#8593; 12%</small></div>
+                <div><span>Release health</span><strong>99.9%</strong><small class="up">All systems good</small></div>
+                <div><span>Time to ship</span><strong>2.4d</strong><small class="down">&#8595; 0.8 days</small></div>
+              </div>
+
+              <div class="sa-dash-grid">
+                <div class="sa-chart">
+                  <div class="sa-card-head"><strong>Deploy activity</strong><span>Last 7 days</span></div>
+                  <div class="sa-bars" aria-hidden="true">
+                    <i style="--h:42%"></i><i style="--h:66%"></i><i style="--h:51%"></i><i style="--h:78%"></i><i style="--h:58%"></i><i style="--h:92%"></i><i style="--h:74%"></i>
+                  </div>
+                  <div class="sa-chart-labels" aria-hidden="true"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+                </div>
+
+                <div class="sa-release-card">
+                  <div class="sa-card-head"><strong>Current release</strong><span class="sa-tag-live">Live</span></div>
+                  <span class="sa-version" id="sa-current-version">v2.4.0</span>
+                  <p id="sa-release-copy">Faster search, smarter changelog and a cleaner command menu.</p>
+                  <div class="sa-progress"><span id="sa-release-progress"></span></div>
+                  <div class="sa-release-meta"><span id="sa-release-meta">12 of 14 tasks</span><strong id="sa-release-percent">86%</strong></div>
+                </div>
+              </div>
+
+              <div class="sa-activity" id="sa-activity">
+                <div class="sa-card-head"><strong>Recent activity</strong><span>View all &#8599;</span></div>
+                <div class="sa-activity-row"><span class="sa-avatar">RS</span><div><strong>Rohan shipped v2.3.2</strong><small>Production &middot; 12 minutes ago</small></div><span class="sa-check">&#10003;</span></div>
+                <div class="sa-activity-row"><span class="sa-avatar sa-avatar--blue">MK</span><div><strong>Mira approved the changelog</strong><small>Release notes &middot; 1 hour ago</small></div><span class="sa-check">&#10003;</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sa-proof">
+          <span>Trusted by product teams at</span>
+          <div><strong>Northstar</strong><strong>Canvas</strong><strong>Lumen</strong><strong>Orbit</strong><strong>Folio</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sa-section sa-wrap" id="features">
+      <div class="sa-section-head">
+        <span class="sa-eyebrow">Everything in one place</span>
+        <h2>Less chasing.<br />More shipping.</h2>
+        <p>Built for small teams who would rather make the product than manage the process.</p>
+      </div>
+
+      <div class="sa-bento">
+        <article class="sa-bento-card sa-bento-card--lead" data-spotlight>
+          <div class="sa-bento-copy">
+            <span class="sa-bento-tag">Release flow</span>
+            <h3>Releases without the busywork.</h3>
+            <p>Turn merged pull requests into a clean release draft automatically. Review, polish and publish from one quiet surface.</p>
+          </div>
+          <div class="sa-release-ui" aria-hidden="true">
+            <div class="sa-release-ui-bar"><span>Draft release</span><span class="sa-release-pill">Draft</span></div>
+            <strong>v2.4.0</strong>
+            <div class="sa-release-ui-lines"><i></i><i></i><i></i></div>
+            <div class="sa-release-ui-foot">
+              <span><i></i> Release notes drafted</span>
+              <b>Publish</b>
+            </div>
+          </div>
+        </article>
+
+        <article class="sa-bento-card" data-spotlight>
+          <span class="sa-bento-number">01</span>
+          <h3>Changelogs people read.</h3>
+          <p>Write once, publish everywhere. Site, inbox and in-app widget.</p>
+          <div class="sa-changelog-ui" aria-hidden="true">
+            <div class="sa-changelog-ui-head"><span>Latest</span><span>v2.3.2</span></div>
+            <strong>Search, but faster.</strong>
+            <i></i><i></i>
+          </div>
+        </article>
+
+        <article class="sa-bento-card" data-spotlight>
+          <span class="sa-bento-number">02</span>
+          <h3>Know what changed.</h3>
+          <p>Deploy health, release timelines and team activity in one readable view.</p>
+          <div class="sa-insight-ui" aria-hidden="true">
+            <div class="sa-insight-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <span>99.9% healthy</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="sa-section sa-wrap sa-integrations" id="integrations">
+      <div class="sa-integrations-head">
+        <div>
+          <span class="sa-eyebrow">Integrations</span>
+          <h2>Fits into the tools<br />you already use.</h2>
+        </div>
+        <p>Connect your stack in a minute. Shipfast listens, drafts and keeps everyone in the loop.</p>
+      </div>
+
+      <div class="sa-integration-grid">
+        <div class="sa-integration"><span class="sa-int-mark sa-int-mark--gh">GH</span><div><strong>GitHub</strong><small>Draft from PRs</small></div><span class="sa-int-arrow">&#8599;</span></div>
+        <div class="sa-integration"><span class="sa-int-mark sa-int-mark--li">LI</span><div><strong>Linear</strong><small>Close the loop</small></div><span class="sa-int-arrow">&#8599;</span></div>
+        <div class="sa-integration"><span class="sa-int-mark sa-int-mark--sl">SL</span><div><strong>Slack</strong><small>Notify the room</small></div><span class="sa-int-arrow">&#8599;</span></div>
+        <div class="sa-integration"><span class="sa-int-mark sa-int-mark--fi">FI</span><div><strong>Figma</strong><small>Attach the work</small></div><span class="sa-int-arrow">&#8599;</span></div>
+        <div class="sa-integration"><span class="sa-int-mark sa-int-mark--ve">VE</span><div><strong>Vercel</strong><small>Ship the build</small></div><span class="sa-int-arrow">&#8599;</span></div>
+        <div class="sa-integration"><span class="sa-int-mark sa-int-mark--no">NO</span><div><strong>Notion</strong><small>Keep the notes</small></div><span class="sa-int-arrow">&#8599;</span></div>
+      </div>
+    </section>
+
+    <section class="sa-customers" id="customers">
+      <div class="sa-wrap">
+        <div class="sa-customers-head">
+          <div>
+            <span class="sa-eyebrow">Customers</span>
+            <h2>Quietly loved.<br />Loudly shipped.</h2>
+          </div>
+          <p>Product teams use Shipfast to turn small updates into a habit, and a habit into a product people trust.</p>
+        </div>
+
+        <div class="sa-quotes">
+          <figure class="sa-quote sa-quote--featured">
+            <span class="sa-quote-mark" aria-hidden="true">&ldquo;</span>
+            <blockquote>Shipfast replaced four tabs and a Friday afternoon of copy-paste. Our releases finally feel like part of the product, not an afterthought.</blockquote>
+            <figcaption><span class="sa-quote-avatar">MC</span><div><strong>Maya Chen</strong><small>Head of Product, Northstar</small></div></figcaption>
+          </figure>
+          <figure class="sa-quote">
+            <span class="sa-quote-mark" aria-hidden="true">&ldquo;</span>
+            <blockquote>The changelog is the first thing our customers mention in calls. That has never happened before.</blockquote>
+            <figcaption><span class="sa-quote-avatar sa-quote-avatar--green">RS</span><div><strong>Rohan Shah</strong><small>Founder, Canvas</small></div></figcaption>
+          </figure>
+          <figure class="sa-quote">
+            <span class="sa-quote-mark" aria-hidden="true">&ldquo;</span>
+            <blockquote>Less process, more shipping. Exactly the trade we wanted to make.</blockquote>
+            <figcaption><span class="sa-quote-avatar sa-quote-avatar--orange">AK</span><div><strong>Anika Kapoor</strong><small>Engineering lead, Orbit</small></div></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sa-section sa-pricing-section" id="pricing">
+      <div class="sa-wrap">
+        <div class="sa-pricing-head">
+          <div>
+            <span class="sa-eyebrow">Simple pricing</span>
+            <h2>Start small.<br />Scale when ready.</h2>
+          </div>
+          <div class="sa-billing" role="group" aria-label="Billing period">
+            <button class="is-active" type="button" data-billing="monthly" aria-pressed="true">Monthly</button>
+            <button type="button" data-billing="yearly" aria-pressed="false">Yearly <span>&minus;20%</span></button>
+          </div>
+        </div>
+
+        <div class="sa-plans">
+          <article class="sa-plan">
+            <span class="sa-plan-name">Starter</span>
+            <p>For side projects and small teams finding their rhythm.</p>
+            <div class="sa-price"><span>$</span><strong data-monthly="0" data-yearly="0">0</strong><span>/mo</span></div>
+            <span class="sa-billing-note" data-monthly-note="Free forever" data-yearly-note="Free forever">Free forever</span>
+            <a class="sa-plan-btn" href="#signup">Start free</a>
+            <ul>
+              <li>1 workspace</li>
+              <li>3 team members</li>
+              <li>Unlimited releases</li>
+              <li>Hosted changelog</li>
+            </ul>
+          </article>
+
+          <article class="sa-plan sa-plan--featured">
+            <span class="sa-popular">Most popular</span>
+            <span class="sa-plan-name">Growth</span>
+            <p>For product teams shipping every week, without the chaos.</p>
+            <div class="sa-price"><span>$</span><strong data-monthly="24" data-yearly="19">24</strong><span>/mo</span></div>
+            <span class="sa-billing-note" data-monthly-note="Billed monthly" data-yearly-note="Billed annually">Billed monthly</span>
+            <a class="sa-plan-btn sa-plan-btn--light" href="#signup">Start 14-day trial</a>
+            <ul>
+              <li>Unlimited workspaces</li>
+              <li>Unlimited team members</li>
+              <li>Custom domains &amp; branding</li>
+              <li>Email &amp; in-app widgets</li>
+              <li>Priority support</li>
+            </ul>
+          </article>
+
+          <article class="sa-plan">
+            <span class="sa-plan-name">Scale</span>
+            <p>For larger teams that need control, security and speed.</p>
+            <div class="sa-price"><span>$</span><strong data-monthly="59" data-yearly="47">59</strong><span>/mo</span></div>
+            <span class="sa-billing-note" data-monthly-note="Billed monthly" data-yearly-note="Billed annually">Billed monthly</span>
+            <a class="sa-plan-btn" href="#signup">Talk to sales</a>
+            <ul>
+              <li>Everything in Growth</li>
+              <li>SSO &amp; audit logs</li>
+              <li>Advanced permissions</li>
+              <li>99.99% uptime SLA</li>
+              <li>Dedicated success manager</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sa-section sa-wrap" id="faq">
+      <div class="sa-faq-layout">
+        <div class="sa-faq-intro">
+          <span class="sa-eyebrow">FAQ</span>
+          <h2>Before<br />you ask.</h2>
+          <p>Still curious? Write to <a href="mailto:hello@shipfast.dev">hello@shipfast.dev</a> and a human will answer.</p>
+        </div>
+
+        <div class="sa-faq-list">
+          <details class="sa-faq-item" open>
+            <summary>Can I use my own domain?<span class="sa-faq-icon" aria-hidden="true"></span></summary>
+            <div class="sa-faq-body"><p>Yes. Growth and Scale both support custom domains, your own colors and a fully unbranded changelog.</p></div>
+          </details>
+          <details class="sa-faq-item">
+            <summary>How does the free trial work?<span class="sa-faq-icon" aria-hidden="true"></span></summary>
+            <div class="sa-faq-body"><p>Start with every feature for 14 days. No card, no auto-charge. If it is not for you, your workspace simply goes quiet.</p></div>
+          </details>
+          <details class="sa-faq-item">
+            <summary>Can we migrate from another tool?<span class="sa-faq-icon" aria-hidden="true"></span></summary>
+            <div class="sa-faq-body"><p>We import Markdown, changelog posts and release notes in one pass. For larger teams, we will help with the first migration.</p></div>
+          </details>
+          <details class="sa-faq-item">
+            <summary>Is there a team discount?<span class="sa-faq-icon" aria-hidden="true"></span></summary>
+            <div class="sa-faq-body"><p>Annual billing saves 20% on Growth and Scale. Nonprofits and open-source projects can write to us for a little more room.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="sa-signup-section sa-wrap" id="signup">
+      <div class="sa-signup-card">
+        <span class="sa-signup-glow" aria-hidden="true"></span>
+        <span class="sa-eyebrow">Ready when you are</span>
+        <h2>Make your next release<br />the best one yet.</h2>
+        <p>Join 4,000+ teams shipping with a little less friction.</p>
+        <a class="sa-big-btn" href="#top">Start your free trial <span>&#8599;</span></a>
+        <span class="sa-signup-small">14 days free &middot; No credit card &middot; Cancel anytime</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sa-footer sa-wrap">
+    <a class="sa-brand sa-brand--footer" href="#top"><span class="sa-mark" aria-hidden="true"><i></i></span>Shipfast</a>
+    <span>&copy; <span data-year>2026</span> Shipfast. Built with Prince Studio.</span>
+    <nav aria-label="Footer">
+      <a href="#product">Product</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#signup">Contact</a>
+    </nav>
+  </footer>
+
+  <dialog class="sa-modal" id="sa-release-modal" aria-labelledby="sa-release-title">
+    <div class="sa-modal-top">
+      <span class="sa-eyebrow">New release</span>
+      <button class="sa-modal-close" type="button" aria-label="Close release composer">Close <span>&#10005;</span></button>
+    </div>
+    <h2 id="sa-release-title">Ship something.</h2>
+    <p>Draft the release, then send it into the world. We will keep the dashboard in sync.</p>
+    <form id="sa-release-form">
+      <div class="sa-modal-field">
+        <label for="sa-new-version">Version</label>
+        <input id="sa-new-version" name="version" type="text" value="v2.4.1" pattern="v[0-9]+\.[0-9]+\.[0-9]+" required />
+      </div>
+      <div class="sa-modal-field">
+        <label for="sa-new-notes">What changed?</label>
+        <textarea id="sa-new-notes" name="notes" rows="4" required>Faster search, a calmer settings page and a smaller first paint.</textarea>
+      </div>
+      <button class="sa-modal-submit" type="submit">Publish release <span>&#8599;</span></button>
+    </form>
+  </dialog>
+
+  <div class="sa-toast" id="sa-toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

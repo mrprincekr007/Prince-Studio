@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features &amp; Specs &mdash; Prince Studio</title>
+  <meta name="description" content="Explore every part of Prince Studio: the editor, AI copilot, live preview, terminal, checkpoints, publishing, APK builder, storage model, permissions and requirements." />
+  <meta name="theme-color" content="#faf9f6" />
+
+  <link rel="canonical" href="https://princestudio.princehacks.online/features.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://princestudio.princehacks.online/features.html" />
+  <meta property="og:site_name" content="Prince Studio" />
+  <meta property="og:title" content="Features &amp; Specs &mdash; Prince Studio" />
+  <meta property="og:description" content="Every tool inside Prince Studio, plus the full spec sheet, permissions and release notes." />
+  <meta property="og:image" content="https://princestudio.princehacks.online/assets/images/landing-logo.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Features &amp; Specs &mdash; Prince Studio" />
+  <meta name="twitter:description" content="Every tool inside Prince Studio, plus the full spec sheet, permissions and release notes." />
+  <meta name="twitter:image" content="https://princestudio.princehacks.online/assets/images/landing-logo.webp" />
+
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon-64.png" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/features.css" />
+  <script type="speculationrules">
+    {
+      "prerender": [{
+        "source": "list",
+        "urls": ["index.html", "privacy.html", "support.html"],
+        "eagerness": "moderate"
+      }]
+    }
+  </script>
+  <noscript><style>.reveal{opacity:1;transform:none}.ft-panel[hidden]{display:grid}</style></noscript>
+</head>
+<body class="features-page">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Prince Studio home">
+        <span class="brand-mark"><img src="assets/icons/nav-icon.png" alt="" width="28" height="28" /></span>
+        <span>Prince Studio</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="features.html" aria-current="page">Features</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <span class="nav-cta">
+          <a class="btn btn--primary btn--sm" href="downloads/Prince-Studio-v1.0.0.apk" download>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+            Download
+          </a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="ft-hero">
+      <div class="wrap ft-hero-grid">
+        <div class="ft-hero-copy reveal">
+          <span class="ft-kicker"><i aria-hidden="true"></i> Complete feature sheet &middot; v1.0.0</span>
+          <h1>Everything inside.<br /><span class="accent">Nothing hidden.</span></h1>
+          <p class="lead">
+            The editor, copilot, preview, terminal and build pipeline &mdash; together in one Android app.
+            Here is what each part does, how files are stored, and exactly what the app asks of your phone.
+          </p>
+          <div class="ft-hero-actions">
+            <a class="btn btn--primary btn--lg" href="downloads/Prince-Studio-v1.0.0.apk" download>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+              Download APK
+            </a>
+            <a class="ft-textlink" href="#tour">
+              Take the tour
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+          <div class="ft-hero-facts" aria-label="Quick facts">
+            <div><strong>4.8 MB</strong><span>One small APK</span></div>
+            <div><strong>Android 7.0+</strong><span>Phone or tablet</span></div>
+            <div><strong>Free</strong><span>No account, no ads</span></div>
+          </div>
+        </div>
+
+        <div class="ft-hero-stage reveal">
+          <aside class="ft-passport" aria-label="Prince Studio release summary">
+            <div class="ft-passport-top">
+              <span class="ft-passport-app">
+                <img src="assets/icons/icon-192.png" alt="" width="44" height="44" />
+                <span><strong>Prince Studio</strong><small>Mobile code studio</small></span>
+              </span>
+              <span class="ft-passport-status"><i aria-hidden="true"></i> Stable</span>
+            </div>
+            <div class="ft-passport-release">
+              <span>Latest release</span>
+              <div><strong>1.0.0</strong><em>Free</em></div>
+              <small>4 November 2026 &middot; signed APK</small>
+            </div>
+            <div class="ft-passport-grid">
+              <div><span>Platform</span><strong>Android 7.0+</strong></div>
+              <div><span>Download</span><strong>4.8 MB</strong></div>
+              <div><span>Account</span><strong>Not required</strong></div>
+              <div><span>Trackers</span><strong>None</strong></div>
+            </div>
+            <div class="ft-passport-foot">
+              <code>com.princehacks.princestudio</code>
+              <button class="ft-copy" type="button" data-copy="com.princehacks.princestudio" aria-label="Copy package name">Copy</button>
+            </div>
+          </aside>
+
+          <div class="ft-stage-float ft-stage-float--a" aria-hidden="true">
+            <span class="ft-float-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span>
+            <span><strong>Preview synced</strong><small>0 errors</small></span>
+          </div>
+          <div class="ft-stage-float ft-stage-float--b" aria-hidden="true">
+            <span class="ft-float-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span>
+            <span><strong>APK signed</strong><small>4.8 MB</small></span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="wrap ft-jump" aria-label="On this page">
+        <span class="ft-jump-label">On this page</span>
+        <a href="#tour"><span>01</span> Workflow</a>
+        <a href="#capabilities"><span>02</span> Capabilities</a>
+        <a href="#specs"><span>03</span> Spec sheet</a>
+        <a href="#permissions"><span>04</span> Permissions</a>
+        <a href="#release"><span>05</span> Release notes</a>
+        <a href="#faq"><span>06</span> FAQ</a>
+      </nav>
+    </section>
+
+    <section class="ft-section ft-tour-section" id="tour">
+      <div class="wrap">
+        <div class="ft-head ft-head--split reveal">
+          <div>
+            <span class="eyebrow">The workflow</span>
+            <h2>From blank file to shipped app.</h2>
+          </div>
+          <p class="ft-head-note">One loop, no tool-switching: write, ask, check the real thing, then ship.</p>
+        </div>
+
+        <div class="ft-tour" data-ft-tour>
+          <div class="ft-tour-rail" role="tablist" aria-label="Studio workflow">
+            <button class="ft-step is-active" type="button" role="tab" id="ft-tab-write" aria-controls="ft-panel-write" aria-selected="true" data-ft-step="0">
+              <span class="ft-step-no">01</span>
+              <span class="ft-step-copy"><strong>Write</strong><small>Editor, files, checkpoints</small></span>
+              <svg class="ft-step-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <button class="ft-step" type="button" role="tab" id="ft-tab-assist" aria-controls="ft-panel-assist" aria-selected="false" tabindex="-1" data-ft-step="1">
+              <span class="ft-step-no">02</span>
+              <span class="ft-step-copy"><strong>Assist</strong><small>Project-aware AI help</small></span>
+              <svg class="ft-step-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <button class="ft-step" type="button" role="tab" id="ft-tab-preview" aria-controls="ft-panel-preview" aria-selected="false" tabindex="-1" data-ft-step="2">
+              <span class="ft-step-no">03</span>
+              <span class="ft-step-copy"><strong>Preview</strong><small>Real browser output</small></span>
+              <svg class="ft-step-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <button class="ft-step" type="button" role="tab" id="ft-tab-ship" aria-controls="ft-panel-ship" aria-selected="false" tabindex="-1" data-ft-step="3">
+              <span class="ft-step-no">04</span>
+              <span class="ft-step-copy"><strong>Ship</strong><small>Pages, APK, ZIP export</small></span>
+              <svg class="ft-step-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+
+          <div class="ft-tour-stage">
+            <span class="ft-stage-count" aria-hidden="true"><b data-ft-index>01</b> / 04</span>
+
+            <article class="ft-panel is-active" id="ft-panel-write" role="tabpanel" aria-labelledby="ft-tab-write" data-ft-panel="0" tabindex="0">
+              <div class="ft-panel-copy">
+                <span class="ft-panel-kicker">Editor &amp; files</span>
+                <h3>A real editor,<br />not a text box.</h3>
+                <p>
+                  Ace powers the editor, with syntax highlighting for HTML, CSS, JavaScript,
+                  JSON, Markdown, PHP, Python, SQL and YAML. Tabs, find, snippets and checkpoints
+                  are built in.
+                </p>
+                <ul class="ft-checks">
+                  <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 6"/></svg> Create, import or export projects</li>
+                  <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 6"/></svg> Snapshot and restore any version</li>
+                  <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 6"/></svg> Plain files you can open anywhere</li>
+                </ul>
+                <div class="ft-tags"><span>Ace editor</span><span>9 languages</span><span>snippets</span><span>checkpoints</span></div>
+              </div>
+              <div class="ft-visual ft-visual--code" aria-hidden="true">
+                <div class="ft-code-window">
+                  <div class="ft-code-top">
+                    <span class="ft-window-dots"><i></i><i></i><i></i></span>
+                    <span>my-portfolio</span>
+                    <span class="ft-saved"><i></i> saved</span>
+                  </div>
+                  <div class="ft-code-tabs"><span class="is-active">index.html</span><span>styles.css</span><span>script.js</span></div>
+                  <div class="ft-code-main">
+                    <div class="ft-code-tree">
+                      <span class="ft-tree-head">PROJECT</span>
+                      <span class="is-active">index.html</span>
+                      <span>styles.css</span>
+                      <span>script.js</span>
+                      <span>assets/</span>
+                      <span>README.md</span>
+                    </div>
+                    <div class="ft-code-pane">
+                      <div class="ft-code-line"><span class="ft-ln">1</span><span class="ft-c-muted">&lt;!DOCTYPE html&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">2</span><span>&lt;<span class="ft-c-key">html</span> <span class="ft-c-attr">lang</span>=<span class="ft-c-str">"en"</span>&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">3</span><span>  &lt;<span class="ft-c-key">head</span>&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">4</span><span>    &lt;<span class="ft-c-key">title</span>&gt;Moss &amp; Stone&lt;/<span class="ft-c-key">title</span>&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">5</span><span>    &lt;<span class="ft-c-key">link</span> <span class="ft-c-attr">rel</span>=<span class="ft-c-str">"stylesheet"</span> <span class="ft-c-attr">href</span>=<span class="ft-c-str">"style.css"</span> /&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">6</span><span>  &lt;/<span class="ft-c-key">head</span>&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">7</span><span>  &lt;<span class="ft-c-key">body</span>&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">8</span><span>    &lt;<span class="ft-c-key">header</span> <span class="ft-c-attr">class</span>=<span class="ft-c-str">"nav"</span>&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">9</span><span>      &lt;<span class="ft-c-key">a</span> <span class="ft-c-attr">class</span>=<span class="ft-c-str">"brand"</span>&gt;Moss &amp; Stone&lt;/<span class="ft-c-key">a</span>&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">10</span><span>    &lt;/<span class="ft-c-key">header</span>&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">11</span><span>    &lt;<span class="ft-c-key">section</span> <span class="ft-c-attr">class</span>=<span class="ft-c-str">"hero"</span>&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">12</span><span>      &lt;<span class="ft-c-key">h1</span>&gt;Rooms that feel like you.&lt;/<span class="ft-c-key">h1</span>&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">13</span><span>    &lt;/<span class="ft-c-key">section</span>&gt;</span></div>
+                      <div class="ft-code-line"><span class="ft-ln">14</span><span>  &lt;/<span class="ft-c-key">body</span>&gt;</span></div>
+                    </div>
+                  </div>
+                  <div class="ft-code-foot"><span>HTML</span><span>Ln 12, Col 45</span><span class="ft-code-ok">0 problems</span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="ft-panel" id="ft-panel-assist" role="tabpanel" aria-labelledby="ft-tab-assist" data-ft-panel="1" tabindex="0" hidden>
+              <div class="ft-panel-copy">
+                <span class="ft-panel-kicker">AI copilot</span>
+                <h3>AI that can see<br />the whole project.</h3>
+                <p>
+                  Connect your own provider and key. Copilot reads the relevant files, edits
+                  code, runs checks and shows its work before anything risky happens.
+                </p>
+                <ul class="ft-checks">
+                  <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 6"/></svg> OpenRouter, Gemini, Groq or any OpenAI-compatible API</li>
+                  <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 6"/></svg> Diffs and approval before files are changed</li>
+                  <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 6"/></svg> Your key stays encrypted on the device</li>
+                </ul>
+                <div class="ft-tags"><span>your own key</span><span>OpenRouter</span><span>Gemini</span><span>Groq</span></div>
+              </div>
+              <div class="ft-visual ft-visual--chat" aria-hidden="true">
+                <div class="ft-chat">
+                  <div class="ft-chat-top">
+                    <span class="ft-chat-avatar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path fill="currentColor" d="M10.3 3.1c.5 4.35 2.48 6.33 6.83 6.83-4.35.5-6.33 2.48-6.83 6.83-.5-4.35-2.48-6.33-6.83-6.83 4.35-.5 6.33-2.48 6.83-6.83Z"/><path fill="currentColor" opacity=".86" d="M18 13.6c.28 2.4 1.36 3.48 3.76 3.76-2.4.28-3.48 1.36-3.76 3.76-.28-2.4-1.36-3.48-3.76-3.76 2.4-.28 3.48-1.36 3.76-3.76Z"/></svg></span>
+                    <span><strong>Copilot</strong><small>my-portfolio &middot; 12 files</small></span>
+                    <span class="ft-provider">OpenRouter</span>
+                  </div>
+                  <div class="ft-chat-thread">
+                    <div class="ft-bubble ft-bubble--user">Add a private dining section below the menu.</div>
+                    <div class="ft-bubble ft-bubble--ai">I found the right spot in <strong>index.html</strong>. Here is the section and the styles it needs.</div>
+                    <div class="ft-diff">
+                      <div class="ft-diff-top"><span>index.html</span><span>+18 &minus;2</span></div>
+                      <div class="ft-diff-row ft-diff-row--del">- &lt;!-- events --&gt;</div>
+                      <div class="ft-diff-row ft-diff-row--add">+ &lt;section class="private-events"&gt;</div>
+                      <div class="ft-diff-row ft-diff-row--add">+ &nbsp;&nbsp;&lt;h2&gt;The whole room, yours.&lt;/h2&gt;</div>
+                      <div class="ft-diff-row ft-diff-row--add">+ &lt;/section&gt;</div>
+                    </div>
+                    <div class="ft-approval"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> Change ready <span>Review diff</span></div>
+                  </div>
+                  <div class="ft-chat-input">Ask Copilot or type a command...<span class="ft-send"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="ft-panel" id="ft-panel-preview" role="tabpanel" aria-labelledby="ft-tab-preview" data-ft-panel="2" tabindex="0" hidden>
+              <div class="ft-panel-copy">
+                <span class="ft-panel-kicker">Live preview</span>
+                <h3>See the real thing<br />while you type.</h3>
+                <p>
+                  Preview runs in a real WebView and is served from your project folder. Refresh
+                  on demand, test links and browse offline without leaving the studio.
+                </p>
+                <ul class="ft-checks">
+                  <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 6"/></svg> Real browser rendering, not an approximation</li>
+                  <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 6"/></svg> Local server stays on your device</li>
+                  <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 6"/></svg> Works without internet once the app is installed</li>
+                </ul>
+                <div class="ft-tags"><span>WebView</span><span>localhost:8080</span><span>offline</span></div>
+              </div>
+              <div class="ft-visual ft-visual--preview" aria-hidden="true">
+                <div class="ft-preview-art">
+                  <div class="ft-browser-pill"><span class="ft-live-dot"></span> preview &middot; localhost:8080 <span class="ft-refresh"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0 2 5.3"/><path d="M20 4v7h-7"/></svg></span></div>
+                  <div class="ft-phone">
+                    <span class="ft-phone-notch"></span>
+                    <div class="ft-phone-screen">
+                      <div class="ft-mini-nav"><span>Moss &amp; Stone</span><span>Menu</span></div>
+                      <div class="ft-mini-hero">
+                        <span class="ft-mini-eyebrow">Interior studio</span>
+                        <div class="ft-mini-title">Rooms that<br /><em>feel like you.</em></div>
+                        <p>Warm spaces, considered details.</p>
+                        <span class="ft-mini-btn">View spaces</span>
+                      </div>
+                      <div class="ft-mini-cards"><i></i><i></i></div>
+                    </div>
+                  </div>
+                  <span class="ft-preview-chip">Sync on save</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="ft-panel" id="ft-panel-ship" role="tabpanel" aria-labelledby="ft-tab-ship" data-ft-panel="3" tabindex="0" hidden>
+              <div class="ft-panel-copy">
+                <span class="ft-panel-kicker">Build &amp; publish</span>
+                <h3>Preview, publish,<br />package.</h3>
+                <p>
+                  Send a website to GitHub Pages, or compile and sign an APK on the device.
+                  Prefer another tool? Export the whole project as a clean ZIP.
+                </p>
+                <ul class="ft-checks">
+                  <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 6"/></svg> One-tap publishing to GitHub Pages</li>
+                  <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 6"/></svg> On-device APK build, signing and install</li>
+                  <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 6"/></svg> ZIP export that opens in Android Studio</li>
+                </ul>
+                <div class="ft-tags"><span>GitHub Pages</span><span>APK</span><span>ZIP export</span></div>
+              </div>
+              <div class="ft-visual ft-visual--ship" aria-hidden="true">
+                <div class="ft-build">
+                  <div class="ft-build-top">
+                    <span class="ft-build-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span>
+                    <span><strong>Release complete</strong><small>v1.0.0 &middot; signed on device</small></span>
+                    <b>100%</b>
+                  </div>
+                  <div class="ft-build-progress"><i></i></div>
+                  <div class="ft-build-rows">
+                    <div class="ft-build-row"><span class="ft-build-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span><strong>Website published</strong><span>princehacks.github.io</span></div>
+                    <div class="ft-build-row"><span class="ft-build-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span><strong>Android APK signed</strong><span>app-release.apk</span></div>
+                    <div class="ft-build-row"><span class="ft-build-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span><strong>Project exported</strong><span>my-site.zip</span></div>
+                  </div>
+                  <div class="ft-build-foot"><span><i></i> No cloud queue</span><span>Ready to install</span></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ft-section ft-bento-section" id="capabilities">
+      <div class="wrap">
+        <div class="ft-head ft-head--split reveal">
+          <div>
+            <span class="eyebrow">The rest of the toolkit</span>
+            <h2>Small app. Serious depth.</h2>
+          </div>
+          <p class="ft-head-note">The quiet details that make a phone feel like a proper studio, not a compromise.</p>
+        </div>
+
+        <div class="ft-bento">
+          <article class="ft-bento-card ft-bento-card--7 reveal">
+            <div class="ft-bento-head">
+              <span class="ft-bento-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span>
+              <span class="ft-bento-label">01 / Projects</span>
+            </div>
+            <h3>Your work lives in one real folder.</h3>
+            <p>Create from blank or a starter, import a ZIP, duplicate a project or export it. Every file stays yours.</p>
+            <div class="ft-file-stack">
+              <div class="ft-file-row"><span class="ft-file-folder"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span><strong>my-portfolio</strong><span>12 files</span></div>
+              <div class="ft-file-row"><span class="ft-file-folder"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span><strong>restaurant-site</strong><span>8 files</span></div>
+              <div class="ft-file-row"><span class="ft-file-folder"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span><strong>apk-starter</strong><span>21 files</span></div>
+              <div class="ft-path"><span>PATH</span><code>/storage/emulated/0/PrinceStudio</code></div>
+            </div>
+          </article>
+
+          <article class="ft-bento-card ft-bento-card--5 reveal">
+            <div class="ft-bento-head">
+              <span class="ft-bento-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 7v5l3 2"/></svg></span>
+              <span class="ft-bento-label">02 / Checkpoints</span>
+            </div>
+            <h3>A safety net for bold edits.</h3>
+            <p>Snapshot the project before a big change and restore any checkpoint later.</p>
+            <div class="ft-checkpoints">
+              <div class="is-current"><i></i><span><strong>Working now</strong><small>Unsaved changes</small></span></div>
+              <div><i></i><span><strong>Before copilot</strong><small>2 minutes ago</small></span><span class="ft-check-restore">Restore</span></div>
+              <div><i></i><span><strong>Homepage v2</strong><small>Yesterday</small></span><span class="ft-check-restore">Restore</span></div>
+            </div>
+          </article>
+
+          <article class="ft-bento-card ft-bento-card--5 reveal">
+            <div class="ft-bento-head">
+              <span class="ft-bento-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m4 17 6-6-6-6"/><path d="M12 19h8"/></svg></span>
+              <span class="ft-bento-label">03 / Terminal</span>
+            </div>
+            <h3>Inspect. Run. Stay in flow.</h3>
+            <p>A project-scoped shell with an approval step for anything that writes.</p>
+            <div class="ft-terminal">
+              <div class="ft-terminal-top"><span><i></i><i></i><i></i></span><small>zsh &middot; my-portfolio</small></div>
+              <div class="ft-terminal-line"><b>$</b> studio check</div>
+              <div class="ft-terminal-line"><span class="ft-terminal-ok">ok</span> 5 files &middot; 0 errors &middot; 0 warnings</div>
+              <div class="ft-terminal-line"><b>$</b> npm run build <span class="ft-caret"></span></div>
+            </div>
+          </article>
+
+          <article class="ft-bento-card ft-bento-card--7 reveal">
+            <div class="ft-bento-head">
+              <span class="ft-bento-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg></span>
+              <span class="ft-bento-label">04 / Templates</span>
+            </div>
+            <h3>Start with something real.</h3>
+            <p>Four complete starters, in plain HTML, CSS and JavaScript. Open one file and make it yours.</p>
+            <div class="ft-mini-templates">
+              <a class="ft-mini-template ft-mini-template--portfolio" href="templates/portfolio/index.html">
+                <span class="ft-mini-canvas"><i></i><i></i><i></i></span>
+                <strong>Portfolio</strong>
+              </a>
+              <a class="ft-mini-template ft-mini-template--restaurant" href="templates/restaurant/index.html">
+                <span class="ft-mini-canvas"><i></i><i></i><i></i></span>
+                <strong>Restaurant</strong>
+              </a>
+              <a class="ft-mini-template ft-mini-template--saas" href="templates/saas/index.html">
+                <span class="ft-mini-canvas"><i></i><i></i><i></i></span>
+                <strong>SaaS</strong>
+              </a>
+              <a class="ft-mini-template ft-mini-template--blank" href="templates/blank/index.html">
+                <span class="ft-mini-canvas"><i></i><i></i><i></i></span>
+                <strong>Blank</strong>
+              </a>
+            </div>
+          </article>
+
+          <article class="ft-bento-card ft-bento-card--8 ft-bento-card--dark reveal">
+            <span class="ft-shield" aria-hidden="true"><svg width="180" height="180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <div class="ft-bento-head">
+              <span class="ft-bento-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></span>
+              <span class="ft-bento-label">05 / Privacy</span>
+            </div>
+            <h3>Local-first by default.</h3>
+            <p>Your code stays on your phone. API keys and tokens are encrypted at rest and only sent to the service you chose.</p>
+            <div class="ft-privacy-stats">
+              <div><strong>0</strong><span>accounts</span></div>
+              <div><strong>0</strong><span>ad trackers</span></div>
+              <div><strong>100%</strong><span>your files</span></div>
+            </div>
+          </article>
+
+          <article class="ft-bento-card ft-bento-card--4 reveal">
+            <div class="ft-bento-head">
+              <span class="ft-bento-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+              <span class="ft-bento-label">06 / Appearance</span>
+            </div>
+            <h3>Light when you want it. Dark when you need it.</h3>
+            <p>A calm interface in both themes, built to stay out of the way of your code.</p>
+            <div class="ft-theme-swatch" aria-hidden="true">
+              <span class="ft-theme-light"><i></i><i></i><i></i><em>Light</em></span>
+              <span class="ft-theme-dark"><i></i><i></i><i></i><em>Dark</em></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ft-section ft-specs-section" id="specs">
+      <div class="wrap">
+        <div class="ft-head ft-head--split reveal">
+          <div>
+            <span class="eyebrow">Spec sheet</span>
+            <h2>The small print, made readable.</h2>
+          </div>
+          <p class="ft-head-note">Everything the download page usually hides, in one place.</p>
+        </div>
+
+        <div class="ft-spec-grid">
+          <article class="ft-spec-card reveal">
+            <div class="ft-spec-head">
+              <div>
+                <span class="ft-mini-label">App details</span>
+                <h3>What ships in 1.0.0</h3>
+              </div>
+              <span class="ft-status-pill">Stable</span>
+            </div>
+            <p>Prince Studio is a mobile-first IDE built with Kotlin and Jetpack Compose, designed around static web projects and an on-device Android build pipeline.</p>
+            <ul class="ft-detail-list">
+              <li><span>Version</span><span>1.0.0 (build 1)</span></li>
+              <li><span>Minimum Android</span><span>7.0 &middot; API 24</span></li>
+              <li><span>Target Android</span><span>API 37</span></li>
+              <li><span>Interface</span><span>Light &amp; dark themes</span></li>
+              <li><span>Download size</span><span>4.8 MB</span></li>
+              <li><span>Price</span><span>Free</span></li>
+            </ul>
+            <div class="ft-package">
+              <span>Package</span>
+              <code>com.princehacks.princestudio</code>
+              <button class="ft-copy" type="button" data-copy="com.princehacks.princestudio" aria-label="Copy package name">Copy</button>
+            </div>
+          </article>
+
+          <article class="ft-spec-card ft-spec-card--tint reveal">
+            <div class="ft-spec-head">
+              <div>
+                <span class="ft-mini-label">Requirements</span>
+                <h3>What your phone needs</h3>
+              </div>
+              <span class="ft-spec-mark">No root</span>
+            </div>
+            <p>No desktop, no root and no account. A normal Android phone or tablet is enough.</p>
+            <ul class="ft-req-list">
+              <li><span class="ft-req-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span><span><strong>Android 7.0 Nougat or newer</strong><small>On a phone or tablet.</small></span></li>
+              <li><span class="ft-req-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span><span><strong>About 20 MB free storage</strong><small>Plus room for your projects.</small></span></li>
+              <li><span class="ft-req-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span><span><strong>All files access on Android 11+</strong><small>So projects live in a normal folder.</small></span></li>
+              <li><span class="ft-req-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span><span><strong>Internet, only when you choose</strong><small>Updates, AI, publishing and support.</small></span></li>
+              <li><span class="ft-req-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span><span><strong>Optional pro keys</strong><small>An AI provider key and a GitHub token.</small></span></li>
+            </ul>
+            <a class="ft-spec-link" href="privacy.html">How your data is handled <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ft-section ft-perms-section" id="permissions">
+      <div class="wrap">
+        <div class="ft-head ft-head--split reveal">
+          <div>
+            <span class="eyebrow">Permissions</span>
+            <h2>Only what a feature needs.</h2>
+          </div>
+          <p class="ft-head-note">Asked only when a feature needs it. Deny anything you are not comfortable with.</p>
+        </div>
+
+        <div class="ft-perms">
+          <article class="ft-perm reveal">
+            <span class="ft-perm-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span>
+            <div><div class="ft-perm-title"><h3>All files access</h3><span>Core</span></div><p>On Android 11+, keeps projects in <code>/storage/emulated/0/PrinceStudio</code> so any file manager can open them.</p></div>
+          </article>
+          <article class="ft-perm reveal">
+            <span class="ft-perm-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span>
+            <div><div class="ft-perm-title"><h3>Internet</h3><span>Feature only</span></div><p>Update checks, AI requests, publishing and the support form.</p></div>
+          </article>
+          <article class="ft-perm reveal">
+            <span class="ft-perm-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg></span>
+            <div><div class="ft-perm-title"><h3>Notifications</h3><span>Optional</span></div><p>Alerts for long-running builds or previews, only if you turn them on.</p></div>
+          </article>
+          <article class="ft-perm reveal">
+            <span class="ft-perm-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span>
+            <div><div class="ft-perm-title"><h3>Install packages</h3><span>On demand</span></div><p>Only if you build an APK and choose to install it on the device.</p></div>
+          </article>
+          <article class="ft-perm reveal">
+            <span class="ft-perm-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 5 4-10 2 5h6"/></svg></span>
+            <div><div class="ft-perm-title"><h3>Foreground service</h3><span>Preview only</span></div><p>Keeps the local preview server running while you browse a project.</p></div>
+          </article>
+        </div>
+
+        <div class="ft-never reveal">
+          <strong>Never requested</strong>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg> Location</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg> Camera</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg> Microphone</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg> Contacts</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg> SMS</span>
+          <a href="privacy.html">Read the policy</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ft-section ft-release-section" id="release">
+      <div class="wrap">
+        <div class="ft-release-card reveal">
+          <div class="ft-release-copy">
+            <span class="eyebrow">Release notes</span>
+            <div class="ft-release-version"><span>Version</span><strong>1.0.0</strong><em>Latest</em></div>
+            <h2>One download.<br />Everything above.</h2>
+            <p>The first public release of the redesigned studio. Small enough to keep anywhere, complete enough to ship from your phone.</p>
+            <div class="ft-release-chips">
+              <span>4 November 2026</span>
+              <span>Signed APK</span>
+              <span>4.8 MB</span>
+            </div>
+            <a class="btn btn--light btn--lg" href="downloads/Prince-Studio-v1.0.0.apk" download>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+              Download signed APK
+            </a>
+          </div>
+
+          <div class="ft-release-log">
+            <div class="ft-log-head">
+              <h3>What changed</h3>
+              <span>First public release</span>
+            </div>
+            <div class="ft-log-item"><span class="ft-log-tag">Studio</span><p>New light and dark interface, rebuilt around a mobile-first workflow.</p></div>
+            <div class="ft-log-item"><span class="ft-log-tag">Projects</span><p>Project home, all-projects library and the four-template starter gallery.</p></div>
+            <div class="ft-log-item"><span class="ft-log-tag">Studio Hub</span><p>Source control, terminal, insights and a proper problems view.</p></div>
+            <div class="ft-log-item"><span class="ft-log-tag">Ship</span><p>On-device APK builder, signing, install flow and GitHub publishing.</p></div>
+            <div class="ft-log-item"><span class="ft-log-tag">Foundation</span><p>Kotlin and Jetpack Compose base, local project engine and on-device build toolchain.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ft-section ft-faq-section" id="faq">
+      <div class="wrap">
+        <div class="faq-layout">
+          <aside class="faq-aside reveal">
+            <span class="eyebrow">Good to know</span>
+            <h2>Questions, answered.</h2>
+            <p>Still stuck, or want to request something? The support page reaches a real person.</p>
+            <a class="link-arrow" href="support.html">
+              Talk to support
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </aside>
+
+          <div class="faq-list reveal">
+            <details class="faq-item" open>
+              <summary>Does Prince Studio work without internet?</summary>
+              <p>Yes. Editing, preview and on-device builds work offline. Internet is only needed for update checks, AI requests, publishing and support.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Do I need to create an account?</summary>
+              <p>No. There is no account and no sign-in. GitHub and an AI provider are optional connections for their specific features.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Where are my projects stored?</summary>
+              <p>In a normal folder at <code>/storage/emulated/0/PrinceStudio</code>. You can open it with any file manager, back it up or export it.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Can I really build an APK on my phone?</summary>
+              <p>Yes. The release pipeline builds, signs and installs an APK on the device. You will only need to allow installs when Android asks.</p>
+            </details>
+            <details class="faq-item">
+              <summary>What happens to my AI key?</summary>
+              <p>Keys are encrypted at rest and sent only to the provider you chose for a request. Prince Studio has no server of its own in that path.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="wrap">
+        <div class="cta reveal">
+          <div class="cta-copy">
+            <span class="eyebrow">Ready?</span>
+            <h2>Install Prince Studio 1.0.0.</h2>
+            <p>One tap to download. Allow installs from your browser, then open the file to install.</p>
+            <div class="cta-meta">
+              <span>v1.0.0</span>
+              <span>4.8 MB</span>
+              <span>Android 7.0+</span>
+              <span>Signed APK</span>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn--light btn--lg" href="downloads/Prince-Studio-v1.0.0.apk" download>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+                Download APK
+              </a>
+              <a class="btn btn--ghost-light btn--lg" href="support.html">Need help?</a>
+            </div>
+          </div>
+          <div class="cta-qr">
+            <div class="cta-qr-head">
+              <span class="cta-app">
+                <img class="cta-app-icon" src="assets/icons/icon-192.png" alt="" width="34" height="34" loading="lazy" />
+                <span class="cta-app-name"><strong>Prince Studio</strong><em>Android app</em></span>
+              </span>
+              <span class="cta-qr-badge"><i aria-hidden="true"></i>APK</span>
+            </div>
+            <div class="cta-qr-body">
+              <button class="qr-card" type="button" data-qr-open aria-haspopup="dialog" aria-controls="qrModal" aria-label="Open full-size QR code">
+                <img src="assets/images/qr-download.png" alt="QR code linking to the Prince Studio website" width="148" height="148" />
+              </button>
+              <div class="cta-qr-copy">
+                <strong>Scan to open</strong>
+                <small>Scan with your camera, or tap the QR to enlarge and download.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="qr-modal" id="qrModal" aria-labelledby="qrModalTitle" aria-describedby="qrModalCopy">
+      <div class="qr-modal-panel">
+        <div class="qr-modal-head">
+          <div class="qr-modal-title">
+            <span class="eyebrow">Full-size QR</span>
+            <h2 id="qrModalTitle">Prince Studio</h2>
+          </div>
+          <button class="qr-modal-close" type="button" data-qr-close aria-label="Close QR code">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+        <div class="qr-modal-code">
+          <img src="assets/images/qr-download.png" alt="Prince Studio website QR code" width="400" height="400" />
+        </div>
+        <p class="qr-modal-copy" id="qrModalCopy">Scan the code to open Prince Studio, or download it to scan later and share.</p>
+        <div class="qr-modal-actions">
+          <a class="qr-modal-download" href="assets/images/qr-download.png" download="prince-studio-qr.png">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+            Download QR
+          </a>
+          <button class="qr-modal-dismiss" type="button" data-qr-close>Close</button>
+        </div>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-mark"><img src="assets/icons/nav-icon.png" alt="" width="28" height="28" loading="lazy" /></span>
+            <span>Prince Studio</span>
+          </a>
+          <p>Design. Build. Ship. A mobile code editor for makers who build on the go.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="features.html">Features</a>
+          <a href="downloads/Prince-Studio-v1.0.0.apk" download>Download</a>
+          <a href="index.html#faq">Questions &amp; answers</a>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <a href="support.html">Contact</a>
+          <a href="support.html#bugs">Report a bug</a>
+          <a href="support.html#features">Request a feature</a>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <a href="privacy.html">Privacy policy</a>
+          <a href="privacy.html#terms">Terms of use</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Prince Studio. All rights reserved.</span>
+        <span>No cookies &middot; No trackers &middot; Made with Prince Studio</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/features.js"></script>
+</body>
+</html>

@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prince Studio &mdash; A code editor and website builder for Android</title>
+  <meta name="description" content="Prince Studio is a code editor for Android. Write HTML, CSS and JavaScript, preview live, publish to GitHub Pages and build APKs &mdash; free, offline-first, no account needed." />
+  <meta name="theme-color" content="#faf9f6" />
+
+  <link rel="canonical" href="https://princestudio.princehacks.online/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://princestudio.princehacks.online/" />
+  <meta property="og:site_name" content="Prince Studio" />
+  <meta property="og:title" content="Prince Studio &mdash; A code editor and website builder for Android" />
+  <meta property="og:description" content="Write HTML, CSS and JavaScript, preview live, publish and build APKs from your phone. Free APK, 4.8 MB, Android 7.0+." />
+  <meta property="og:image" content="https://princestudio.princehacks.online/assets/images/landing-logo.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Prince Studio &mdash; A code editor and website builder for Android" />
+  <meta name="twitter:description" content="Write HTML, CSS and JavaScript, preview live, publish and build APKs from your phone." />
+  <meta name="twitter:image" content="https://princestudio.princehacks.online/assets/images/landing-logo.webp" />
+
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon-64.png" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/index.css" />
+  <script type="speculationrules">
+    {
+      "prerender": [{
+        "source": "list",
+        "urls": ["features.html", "privacy.html", "support.html"],
+        "eagerness": "moderate"
+      }]
+    }
+  </script>
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Prince Studio",
+    "url": "https://princestudio.princehacks.online/",
+    "operatingSystem": "Android 7.0+",
+    "applicationCategory": "DeveloperApplication",
+    "description": "A mobile code editor for building websites and Android apps on your phone.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+    "softwareVersion": "1.0.0",
+    "downloadUrl": "https://princestudio.princehacks.online/downloads/Prince-Studio-v1.0.0.apk"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Prince Studio home">
+        <span class="brand-mark"><img src="assets/icons/nav-icon.png" alt="" width="28" height="28" /></span>
+        <span>Prince Studio</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="features.html">Features</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <span class="nav-cta">
+          <a class="btn btn--primary btn--sm" href="downloads/Prince-Studio-v1.0.0.apk" download>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+            Download
+          </a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-copy reveal">
+          <span class="pill"><span class="dot"></span> Prince Studio v1.0.0 <em>&middot; free APK for Android</em></span>
+          <h1>Build websites and Android apps<br /> <span class="accent">from your phone.</span></h1>
+          <p class="lead">
+            A code editor, live preview and build pipeline in one Android app. Write plain
+            HTML, CSS and JavaScript, publish to GitHub Pages, or compile a signed APK &mdash; no
+            laptop required.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" href="downloads/Prince-Studio-v1.0.0.apk" download>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+              Download APK
+            </a>
+            <a class="btn btn--secondary btn--lg" href="features.html">
+              Explore features
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+          <div class="hero-meta">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> Android 7.0+</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> 4.8 MB download</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> No account</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> Works offline</span>
+          </div>
+        </div>
+
+        <div class="showcase reveal">
+          <div class="window ide" data-ide aria-label="Prince Studio editor preview">
+            <div class="ide-titlebar">
+              <div class="ide-title-left">
+                <span class="ide-mark" aria-hidden="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6"/><path d="m16 6 6 6-6 6"/></svg>
+                </span>
+                <span class="ide-app">Prince Studio</span>
+                <span class="ide-title-sub">my-portfolio</span>
+                <nav class="ide-menus" aria-hidden="true">
+                  <span>File</span><span>Edit</span><span>Selection</span><span>View</span><span>Go</span><span>Run</span><span>Terminal</span><span>Help</span>
+                </nav>
+              </div>
+                  <button class="ide-command" type="button" data-palette-open aria-label="Search files in this project: prince-studio, Ctrl P" aria-haspopup="dialog">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                <span>prince-studio</span>
+                <kbd>Ctrl P</kbd>
+              </button>
+              <div class="ide-win-actions" aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+
+            <div class="ide-main">
+              <nav class="ide-rail" aria-label="Editor views">
+                <div class="ide-rail-group">
+                  <button class="ide-rail-btn active" type="button" data-rail="explorer" title="Explorer" aria-label="Explorer">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6l2 2h8v14H4z"/></svg>
+                  </button>
+                  <button class="ide-rail-btn" type="button" data-rail="search" title="Search" aria-label="Search files">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                  </button>
+                  <button class="ide-rail-btn" type="button" data-rail="source" title="Source control" aria-label="Source control">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="6" r="2.4"/><circle cx="6" cy="18" r="2.4"/><circle cx="18" cy="8" r="2.4"/><path d="M6 8.4v7.2M18 10.4c0 4-6 2.2-6 5.4"/></svg>
+                  </button>
+                  <button class="ide-rail-btn" type="button" data-rail="run" title="Run and debug" aria-label="Build and run">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m8 5 11 7-11 7z"/></svg>
+                  </button>
+                  <button class="ide-rail-btn" type="button" data-rail="extensions" title="Extensions" aria-label="Extensions">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>
+                  </button>
+                </div>
+                <div class="ide-rail-group">
+                  <button class="ide-rail-btn" type="button" data-rail="account" title="Accounts" aria-label="Account">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="3.5"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+                  </button>
+                  <button class="ide-rail-btn" type="button" data-rail="settings" title="Settings" aria-label="Settings">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg>
+                  </button>
+                </div>
+              </nav>
+
+              <aside class="ide-side">
+                <div class="ide-side-head">Explorer <span>&middot;&middot;&middot;</span></div>
+                <div class="ide-side-section">
+                  <span class="ide-chevron">&#9662;</span>
+                  <span>PRINCE-STUDIO</span>
+                  <span class="ide-side-tools" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h6l2 2h10v10H3z"/></svg>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 11a8 8 0 1 0 2 5.3"/><path d="M20 4v7h-7"/></svg>
+                  </span>
+                </div>
+                <div class="ide-tree">
+                  <button class="ide-file active" type="button" data-file="index.html">
+                    <svg class="file-glyph html" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                    <span>index.html</span>
+                    <span class="ide-file-mod">M</span>
+                  </button>
+                  <button class="ide-file" type="button" data-file="styles.css">
+                    <svg class="file-glyph css" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                    <span>styles.css</span>
+                  </button>
+                  <button class="ide-file" type="button" data-file="script.js">
+                    <svg class="file-glyph js" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                    <span>script.js</span>
+                  </button>
+                  <div class="ide-tree-row"><span class="ide-chevron">&#9656;</span><span class="ide-folder"></span> assets</div>
+                  <div class="ide-tree-row"><span class="ide-chevron">&#9656;</span><span class="ide-folder"></span> checkpoints</div>
+                </div>
+                <div class="ide-side-section">
+                  <span class="ide-chevron">&#9662;</span>
+                  <span>CHECKPOINTS</span>
+                  <span class="ide-count">2</span>
+                </div>
+                <div class="ide-tree ide-tree--meta">
+                  <div class="ide-meta-row"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> autosave 2m ago</div>
+                  <div class="ide-meta-row"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> safe restore point</div>
+                </div>
+                <div class="ide-side-section ide-side-section--plain">OUTLINE</div>
+                <div class="ide-outline">
+                  <div><span>#</span> section.hero</div>
+                  <div><span>H1</span> Design that works.</div>
+                  <div><span>&lt;/&gt;</span> script.js</div>
+                </div>
+              </aside>
+
+              <section class="ide-editor">
+                <div class="ide-tabs">
+                  <div class="ide-tablist" role="tablist" aria-label="Open files">
+                  <button class="ide-tab active" id="ide-tab-index" role="tab" aria-selected="true" aria-controls="ide-panel-index" data-file="index.html" type="button">
+                    <svg class="file-glyph html" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                    <span>index.html</span><span class="ide-tab-x" aria-hidden="true">&times;</span>
+                  </button>
+                  <button class="ide-tab" id="ide-tab-styles" role="tab" aria-selected="false" aria-controls="ide-panel-styles" data-file="styles.css" type="button">
+                    <svg class="file-glyph css" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                    <span>styles.css</span><span class="ide-tab-x" aria-hidden="true">&times;</span>
+                  </button>
+                  <button class="ide-tab" id="ide-tab-script" role="tab" aria-selected="false" aria-controls="ide-panel-script" data-file="script.js" type="button">
+                    <svg class="file-glyph js" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                    <span>script.js</span><span class="ide-tab-x" aria-hidden="true">&times;</span>
+                  </button>
+                  </div>
+                  <span class="ide-tabs-fill"></span>
+                  <button class="ide-run" type="button" data-run aria-label="Run: build and refresh preview">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="m8 5 11 7-11 7z"/></svg>
+                    <span data-run-label>Run</span>
+                  </button>
+                </div>
+                <div class="ide-breadbar">
+                  <div class="ide-breadcrumbs" aria-hidden="true">
+                    <span>my-portfolio</span><b>&rsaquo;</b><span data-crumb>index.html</span><b>&rsaquo;</b><span class="ide-symbol" data-symbol>section.hero</span>
+                  </div>
+                  <div class="ide-edit-actions" aria-hidden="true">
+                    <span title="Split editor"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16"/></svg></span>
+                    <span title="More actions"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></span>
+                  </div>
+                </div>
+                <div class="ide-codewrap">
+                  <div class="ide-codepane">
+                    <div class="ide-filepanel" id="ide-panel-index" role="tabpanel" aria-labelledby="ide-tab-index" data-panel="index.html">
+                      <div class="code-line"><span class="ln-no">1</span><span><span class="v-punc">&lt;!</span><span class="v-tag">doctype html</span><span class="v-punc">&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">2</span><span><span class="v-punc">&lt;</span><span class="v-tag">html</span> <span class="v-attr">lang</span>=<span class="v-str">"en"</span><span class="v-punc">&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">3</span><span>&nbsp;&nbsp;<span class="v-punc">&lt;</span><span class="v-tag">head</span><span class="v-punc">&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">4</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="v-punc">&lt;</span><span class="v-tag">meta</span> <span class="v-attr">charset</span>=<span class="v-str">"utf-8"</span> <span class="v-punc">/&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">5</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="v-punc">&lt;</span><span class="v-tag">title</span><span class="v-punc">&gt;</span>Aarav &mdash; Designer<span class="v-punc">&lt;/</span><span class="v-tag">title</span><span class="v-punc">&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">6</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="v-punc">&lt;</span><span class="v-tag">link</span> <span class="v-attr">rel</span>=<span class="v-str">"stylesheet"</span> <span class="v-attr">href</span>=<span class="v-str">"styles.css"</span> <span class="v-punc">/&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">7</span><span>&nbsp;&nbsp;<span class="v-punc">&lt;/</span><span class="v-tag">head</span><span class="v-punc">&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">8</span><span>&nbsp;&nbsp;<span class="v-punc">&lt;</span><span class="v-tag">body</span><span class="v-punc">&gt;</span></span></div>
+                      <div class="code-line is-current"><span class="ln-no">9</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="v-punc">&lt;</span><span class="v-tag">section</span> <span class="v-attr">class</span>=<span class="v-str">"hero"</span><span class="v-punc">&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">10</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v-punc">&lt;</span><span class="v-tag">h1</span><span class="v-punc">&gt;</span>Design that works.<span class="v-punc">&lt;/</span><span class="v-tag">h1</span><span class="v-punc">&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">11</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v-punc">&lt;</span><span class="v-tag">p</span> <span class="v-attr">class</span>=<span class="v-str">"lead"</span><span class="v-punc">&gt;</span>Built on a phone.<span class="v-punc">&lt;/</span><span class="v-tag">p</span><span class="v-punc">&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">12</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v-punc">&lt;</span><span class="v-tag">a</span> <span class="v-attr">class</span>=<span class="v-str">"btn"</span> <span class="v-attr">href</span>=<span class="v-str">"#work"</span><span class="v-punc">&gt;</span>View work<span class="v-punc">&lt;/</span><span class="v-tag">a</span><span class="v-punc">&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">13</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="v-punc">&lt;/</span><span class="v-tag">section</span><span class="v-punc">&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">14</span><span>&nbsp;&nbsp;<span class="v-punc">&lt;/</span><span class="v-tag">body</span><span class="v-punc">&gt;</span></span></div>
+                      <div class="code-line"><span class="ln-no">15</span><span><span class="v-punc">&lt;/</span><span class="v-tag">html</span><span class="v-punc">&gt;</span></span></div>
+                    </div>
+
+                    <div class="ide-filepanel" id="ide-panel-styles" role="tabpanel" aria-labelledby="ide-tab-styles" data-panel="styles.css" hidden>
+                      <div class="code-line"><span class="ln-no">1</span><span><span class="v-sel">:root</span> <span class="v-punc">{</span></span></div>
+                      <div class="code-line"><span class="ln-no">2</span><span>&nbsp;&nbsp;<span class="v-prop">--bg</span>: <span class="v-val">#ffffff</span>;</span></div>
+                      <div class="code-line"><span class="ln-no">3</span><span>&nbsp;&nbsp;<span class="v-prop">--ink</span>: <span class="v-val">#101216</span>;</span></div>
+                      <div class="code-line"><span class="ln-no">4</span><span>&nbsp;&nbsp;<span class="v-prop">--accent</span>: <span class="v-val">#1e46ff</span>;</span></div>
+                      <div class="code-line"><span class="ln-no">5</span><span><span class="v-punc">}</span></span></div>
+                      <div class="code-line"><span class="ln-no">6</span><span>&nbsp;</span></div>
+                      <div class="code-line is-current"><span class="ln-no">7</span><span><span class="v-sel">.hero</span> <span class="v-punc">{</span></span></div>
+                      <div class="code-line"><span class="ln-no">8</span><span>&nbsp;&nbsp;<span class="v-prop">display</span>: <span class="v-val">grid</span>;</span></div>
+                      <div class="code-line"><span class="ln-no">9</span><span>&nbsp;&nbsp;<span class="v-prop">gap</span>: <span class="v-num">18px</span>;</span></div>
+                      <div class="code-line"><span class="ln-no">10</span><span>&nbsp;&nbsp;<span class="v-prop">padding</span>: <span class="v-num">72px</span> <span class="v-num">24px</span>;</span></div>
+                      <div class="code-line"><span class="ln-no">11</span><span><span class="v-punc">}</span></span></div>
+                      <div class="code-line"><span class="ln-no">12</span><span>&nbsp;</span></div>
+                      <div class="code-line"><span class="ln-no">13</span><span><span class="v-sel">.hero</span> <span class="v-sel">h1</span> <span class="v-punc">{</span></span></div>
+                      <div class="code-line"><span class="ln-no">14</span><span>&nbsp;&nbsp;<span class="v-prop">color</span>: <span class="v-fn">var</span>(<span class="v-prop">--accent</span>);</span></div>
+                      <div class="code-line"><span class="ln-no">15</span><span><span class="v-punc">}</span></span></div>
+                    </div>
+
+                    <div class="ide-filepanel" id="ide-panel-script" role="tabpanel" aria-labelledby="ide-tab-script" data-panel="script.js" hidden>
+                      <div class="code-line"><span class="ln-no">1</span><span><span class="v-com">// my-portfolio</span></span></div>
+                      <div class="code-line"><span class="ln-no">2</span><span><span class="v-kw">const</span> <span class="v-var">menu</span> = <span class="v-var">document</span>.<span class="v-fn">querySelector</span>(<span class="v-str">'.menu'</span>);</span></div>
+                      <div class="code-line"><span class="ln-no">3</span><span>&nbsp;</span></div>
+                      <div class="code-line is-current"><span class="ln-no">4</span><span><span class="v-var">menu</span><span class="v-punc">?.</span><span class="v-fn">addEventListener</span>(<span class="v-str">'click'</span>, () <span class="v-kw">=&gt;</span> <span class="v-punc">{</span></span></div>
+                      <div class="code-line"><span class="ln-no">5</span><span>&nbsp;&nbsp;<span class="v-var">document</span>.<span class="v-var">body</span>.<span class="v-var">classList</span>.<span class="v-fn">toggle</span>(<span class="v-str">'open'</span>);</span></div>
+                      <div class="code-line"><span class="ln-no">6</span><span><span class="v-punc">});</span></span></div>
+                      <div class="code-line"><span class="ln-no">7</span><span>&nbsp;</span></div>
+                      <div class="code-line"><span class="ln-no">8</span><span><span class="v-kw">const</span> <span class="v-var">year</span> = <span class="v-var">document</span>.<span class="v-fn">querySelector</span>(<span class="v-str">'[data-year]'</span>);</span></div>
+                      <div class="code-line"><span class="ln-no">9</span><span><span class="v-kw">if</span> (<span class="v-var">year</span>) <span class="v-var">year</span>.<span class="v-var">textContent</span> = <span class="v-kw">new</span> <span class="v-fn">Date</span>().<span class="v-fn">getFullYear</span>();</span></div>
+                      <div class="code-line"><span class="ln-no">10</span><span>&nbsp;</span></div>
+                      <div class="code-line"><span class="ln-no">11</span><span><span class="v-var">console</span>.<span class="v-fn">log</span>(<span class="v-str">'Ready to publish.'</span>);</span></div>
+                    </div>
+                  </div>
+                  <div class="ide-minimap" aria-hidden="true">
+                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                  </div>
+                </div>
+              </section>
+
+              <aside class="ide-preview">
+                <div class="ide-preview-head">
+                  <div class="ide-preview-tabs" role="tablist" aria-label="Preview panels">
+                    <button class="active" type="button" role="tab" aria-selected="true" data-preview-tab="preview">Preview</button>
+                    <button type="button" role="tab" aria-selected="false" data-preview-tab="terminal">Terminal</button>
+                  </div>
+                  <span class="ide-live"><i></i> Live</span>
+                </div>
+                <div class="ide-preview-toolbar">
+                  <span class="ide-url">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+                    localhost:8080
+                  </span>
+                  <button class="ide-iconbtn" type="button" data-refresh aria-label="Refresh live preview">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 11a8 8 0 1 0 2 5.3"/><path d="M20 4v7h-7"/></svg>
+                  </button>
+                </div>
+                <div class="preview-stage">
+                  <div class="preview-phone" data-preview>
+                    <span class="preview-notch" aria-hidden="true"></span>
+                    <div class="phone-screen">
+                      <div class="phone-status"><span>9:41</span><span class="phone-status-icons"><i></i><i></i><i></i></span></div>
+                      <div class="mini-browser">
+                        <div class="mini-nav">
+                          <span class="mini-brand"><i></i> Aarav.</span>
+                          <span class="mini-links"><span></span><span></span><span></span></span>
+                        </div>
+                        <div class="mini-hero">
+                          <span class="mini-kicker"></span>
+                          <div class="mini-title">Design that works.</div>
+                          <p>Independent designer building clean products for the web.</p>
+                          <span class="mini-btn">View work</span>
+                        </div>
+                        <div class="mini-grid">
+                          <div class="mini-card"><i></i><em></em></div>
+                          <div class="mini-card"><i></i><em></em></div>
+                          <div class="mini-card"><i></i><em></em></div>
+                        </div>
+                      </div>
+                      <span class="phone-home" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ide-terminal" data-terminal hidden role="tabpanel" aria-label="Terminal">
+                  <div class="ide-terminal-line"><span class="term-path">prince@studio</span>:<span class="term-dir">~/my-portfolio</span>$ npm run dev</div>
+                  <div class="ide-terminal-line term-muted">VITE v5.4.2 &nbsp;ready in 214 ms</div>
+                  <div class="ide-terminal-line"><span class="term-ok">&#10132;</span> Local: <span class="term-link">http://localhost:8080/</span></div>
+                  <div class="ide-terminal-line"><span class="term-ok">&#10132;</span> press <b>h</b> + enter to show help</div>
+                  <div class="ide-terminal-line"><span class="term-path">prince@studio</span>:<span class="term-dir">~/my-portfolio</span>$ <span class="term-cursor" aria-hidden="true"></span></div>
+                </div>
+                <div class="ide-preview-foot"><span data-preview-status><i></i> Hot reload</span><span data-preview-dim>390 &times; 844</span></div>
+              </aside>
+            </div>
+
+            <div class="ide-mobilebar">
+              <div class="ide-mobile-switch" role="group" aria-label="Editor panels">
+                <button class="active" type="button" data-mobile-view="code" aria-pressed="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6"/><path d="m16 6 6 6-6 6"/></svg>
+                  Code
+                </button>
+                <button type="button" data-mobile-view="preview" aria-pressed="false">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg>
+                  Preview
+                </button>
+              </div>
+              <button class="ide-mobile-run" type="button" data-run aria-label="Run: build and refresh preview">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="m8 5 11 7-11 7z"/></svg>
+                <span data-run-label>Run</span>
+              </button>
+            </div>
+
+            <div class="ide-statusbar">
+              <div class="ide-status-left">
+                <span class="ide-status-strong">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="2.2"/><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="8" r="2.2"/><path d="M6 8.2v7.6M18 10.2c0 4-6 2.2-6 5.4"/></svg>
+                  main*
+                </span>
+                <span class="ide-status-sync"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 11a8 8 0 1 0 2 5.3"/><path d="M20 4v7h-7"/></svg> 0&darr; 0&uarr;</span>
+                <span class="ide-status-ok"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg> 0</span>
+                <span class="ide-status-warn"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.8 20h18.4z"/><path d="M12 9v5M12 17h.01"/></svg> 0</span>
+              </div>
+              <div class="ide-status-right">
+                <span data-position>Ln 9, Col 22</span>
+                <span>Spaces: 2</span>
+                <span>UTF-8</span>
+                <span data-lang>HTML</span>
+                <span class="ide-prettier"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 13 4 4L19 6"/></svg> Prettier</span>
+                <span class="ide-bell"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9"/><path d="M10 21h4"/></svg></span>
+              </div>
+            </div>
+
+            <div class="ide-palette" data-palette hidden>
+              <div class="ide-palette-box" role="dialog" aria-modal="true" aria-label="Go to file">
+                <div class="ide-palette-search">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                  <input type="text" data-palette-input placeholder="Search files by name..." autocomplete="off" spellcheck="false" />
+                  <kbd>esc</kbd>
+                </div>
+                <div class="ide-palette-list" data-palette-list>
+                  <button type="button" data-palette-file="index.html"><svg class="file-glyph html" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg><span><strong>index.html</strong><small>my-portfolio</small></span><kbd>&#8629;</kbd></button>
+                  <button type="button" data-palette-file="styles.css"><svg class="file-glyph css" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg><span><strong>styles.css</strong><small>my-portfolio</small></span><kbd>&#8629;</kbd></button>
+                  <button type="button" data-palette-file="script.js"><svg class="file-glyph js" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg><span><strong>script.js</strong><small>my-portfolio</small></span><kbd>&#8629;</kbd></button>
+                </div>
+                <div class="ide-palette-empty" data-palette-empty hidden>No matching files</div>
+                <div class="ide-palette-foot"><span>&#8629; open</span><span>esc close</span></div>
+              </div>
+            </div>
+
+            <div class="ide-toast" data-toast role="status" aria-live="polite"></div>
+          </div>
+
+          <div class="float-card float-card--a">
+            <span class="fc-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span>
+            <div><strong>APK built &amp; signed</strong><span>app-release.apk &middot; 4.8 MB</span></div>
+          </div>
+          <div class="float-card float-card--b">
+            <span class="fc-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M20 11a8 8 0 1 0 2 5.3"/><path d="M20 4v7h-7"/></svg></span>
+            <div><strong>Preview synced</strong><span>localhost:8080 &middot; 0 errors</span></div>
+          </div>
+        </div>
+
+        <div class="stat-strip reveal">
+          <div class="stat"><strong>4</strong><span>starter templates</span></div>
+          <div class="stat"><strong>70+</strong><span>AI provider presets</span></div>
+          <div class="stat"><strong>0</strong><span>accounts needed</span></div>
+          <div class="stat"><strong>4.8 MB</strong><span>one small APK</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-proof" id="screens" aria-labelledby="app-proof-title">
+      <div class="wrap">
+        <div class="s-head reveal">
+          <span class="eyebrow">Inside the app</span>
+          <h2 id="app-proof-title">Real app. Real screens.</h2>
+          <p>Actual screens from Prince Studio 1.0.0, captured on Android. No concept renders.</p>
+        </div>
+
+        <div class="app-proof-rail-wrap">
+          <div class="app-proof-rail reveal" role="region" aria-label="Prince Studio app screenshots" tabindex="0">
+            <figure class="app-proof-card">
+              <div class="app-proof-frame">
+                <img src="assets/app-screenshots/app-files.webp" alt="Prince Studio project files showing index.html, script.js and styles.css" width="720" height="1595" loading="lazy" decoding="async" draggable="false" />
+              </div>
+              <figcaption><span>01</span><strong>Your real project folder</strong></figcaption>
+            </figure>
+            <figure class="app-proof-card">
+              <div class="app-proof-frame">
+                <img src="assets/app-screenshots/app-editor.webp" alt="Prince Studio code editor showing index.html with syntax highlighting and the AI toolbar" width="720" height="1595" loading="lazy" decoding="async" draggable="false" />
+              </div>
+              <figcaption><span>02</span><strong>Edit real code</strong></figcaption>
+            </figure>
+            <figure class="app-proof-card is-active">
+              <div class="app-proof-frame">
+                <img src="assets/app-screenshots/app-preview.webp" alt="Live preview of a personal portfolio website inside Prince Studio" width="720" height="1595" loading="lazy" decoding="async" draggable="false" />
+              </div>
+              <figcaption><span>03</span><strong>Preview every change</strong></figcaption>
+            </figure>
+            <figure class="app-proof-card">
+              <div class="app-proof-frame">
+                <img src="assets/app-screenshots/app-ai-chat.webp" alt="Prince Studio AI chat finding and fixing issues in a portfolio project" width="720" height="1595" loading="lazy" decoding="async" draggable="false" />
+              </div>
+              <figcaption><span>04</span><strong>AI that fixes real errors</strong></figcaption>
+            </figure>
+            <figure class="app-proof-card">
+              <div class="app-proof-frame">
+                <img src="assets/app-screenshots/app-android-build.webp" alt="Android App Studio build screen with app name, package and build settings" width="720" height="1595" loading="lazy" decoding="async" draggable="false" />
+              </div>
+              <figcaption><span>05</span><strong>Build and install an APK</strong></figcaption>
+            </figure>
+          </div>
+          <div class="app-proof-nav" data-proof-nav>
+            <button class="app-proof-nav-btn" type="button" data-rail-prev aria-label="Previous app screenshot">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="app-proof-dots" data-rail-dots></div>
+            <button class="app-proof-nav-btn" type="button" data-rail-next aria-label="Next app screenshot">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="s-head reveal">
+          <span class="eyebrow">Why Prince Studio</span>
+          <h2>Everything you need to ship, in one app.</h2>
+          <p>No plugins, no server, no subscription. Install the APK and start a project.</p>
+        </div>
+
+        <div class="fscroll" data-fscroll>
+          <div class="fscroll-pin">
+            <div class="fscroll-bar">
+              <div class="fscroll-tabs" role="tablist" aria-label="Feature slides">
+                <span class="fscroll-liquid" aria-hidden="true"></span>
+                <button class="fscroll-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="fcard-editor" id="ftab-editor" data-fstep="0"><span>01</span> Editor</button>
+                <button class="fscroll-tab" type="button" role="tab" aria-selected="false" aria-controls="fcard-copilot" id="ftab-copilot" data-fstep="1" tabindex="-1"><span>02</span> Copilot</button>
+                <button class="fscroll-tab" type="button" role="tab" aria-selected="false" aria-controls="fcard-ship" id="ftab-ship" data-fstep="2" tabindex="-1"><span>03</span> Ship</button>
+              </div>
+              <div class="fscroll-progress" aria-hidden="true"><i data-fprogress></i></div>
+              <span class="fscroll-count"><b data-findex>01</b> / 03</span>
+            </div>
+
+            <div class="fscroll-deck">
+              <article class="fcard is-active" id="fcard-editor" role="tabpanel" aria-labelledby="ftab-editor" data-fcard="0" data-peek="01 &middot; Editor">
+                <div class="fcard-copy">
+                  <span class="eyebrow">Editor &amp; preview</span>
+                  <h3>Your whole project, one tap away.</h3>
+                  <p>
+                    An Ace-powered editor with syntax highlighting for HTML, CSS, JavaScript and
+                    more. Preview runs your site in a real browser view, served straight from the
+                    project folder &mdash; even offline.
+                  </p>
+                  <ul class="feature-list">
+                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> Tabs, find &amp; replace, quick open</li>
+                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> Restore checkpoints anytime</li>
+                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> Files stay in <code>PrinceStudio</code></li>
+                  </ul>
+                </div>
+                <div class="fcard-visual">
+                  <span class="fcard-mark" aria-hidden="true">01</span>
+                  <div class="shot">
+                    <span class="shot-chip shot-chip--tl"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> 0 problems</span>
+                    <div class="edit-split" aria-hidden="true">
+                      <div class="edit-side">
+                        <div class="edit-bar"><span class="tab active">index.html</span><span class="tab">styles.css</span><span class="tab">script.js</span></div>
+                        <div class="edit-code">
+                          <div><span class="c-c">&lt;!-- index.html --&gt;</span></div>
+                          <div>&lt;<span class="c-k">section</span> <span class="c-a">class</span>=<span class="c-s">"hero"</span>&gt;</div>
+                          <div>&nbsp;&nbsp;&lt;<span class="c-k">h1</span>&gt;Design that works.&lt;/<span class="c-k">h1</span>&gt;</div>
+                          <div>&nbsp;&nbsp;&lt;<span class="c-k">p</span>&gt;Built on a phone.&lt;/<span class="c-k">p</span>&gt;</div>
+                          <div>&lt;/<span class="c-k">section</span>&gt;</div>
+                          <div>&nbsp;</div>
+                          <div><span class="c-c">/* styles.css */</span></div>
+                          <div>.<span class="c-t">hero</span> {</div>
+                          <div>&nbsp;&nbsp;<span class="c-a">display</span>: <span class="c-p">grid</span>;</div>
+                          <div>&nbsp;&nbsp;<span class="c-a">gap</span>: <span class="c-p">24px</span>;</div>
+                          <div>}</div>
+                        </div>
+                      </div>
+                      <div class="edit-preview">
+                        <div class="mini-preview-head"><span class="live-dot"></span> Live preview &middot; localhost</div>
+                        <div class="mini-site">
+                          <div class="mini-site-title">Design that <span>works.</span></div>
+                          <p>Independent designer building clean products for the web.</p>
+                          <div class="row"><i></i><i></i><i></i></div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="shot-chip shot-chip--br"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> Saved just now</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="fcard" id="fcard-copilot" role="tabpanel" aria-labelledby="ftab-copilot" data-fcard="1" data-peek="02 &middot; AI Copilot">
+                <div class="fcard-copy">
+                  <span class="eyebrow">AI copilot</span>
+                  <h3>AI that works inside the project.</h3>
+                  <p>
+                    Connect your own provider and key. The copilot reads your files, edits code,
+                    checks its work and asks before anything destructive &mdash; all from a chat.
+                  </p>
+                  <ul class="feature-list">
+                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> OpenRouter, Gemini, Groq or any API</li>
+                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> Encrypted with Android Keystore</li>
+                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> You pay your provider, never us</li>
+                  </ul>
+                </div>
+                <div class="fcard-visual">
+                  <span class="fcard-mark" aria-hidden="true">02</span>
+                  <div class="shot">
+                    <div class="chat-mock" aria-hidden="true">
+                      <div class="chat-head">
+                        <span class="chat-avatar"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path fill="currentColor" d="M10.3 3.1c.5 4.35 2.48 6.33 6.83 6.83-4.35.5-6.33 2.48-6.83 6.83-.5-4.35-2.48-6.33-6.83-6.83 4.35-.5 6.33-2.48 6.83-6.83Z"/><path class="chat-spark-small" fill="currentColor" opacity=".86" d="M18 13.6c.28 2.4 1.36 3.48 3.76 3.76-2.4.28-3.48 1.36-3.76 3.76-.28-2.4-1.36-3.48-3.76-3.76 2.4-.28 3.48-1.36 3.76-3.76Z"/></svg></span>
+                        <div><strong>Copilot</strong><span>my-portfolio &middot; 12 files</span></div>
+                        <span class="chat-provider">OpenRouter</span>
+                      </div>
+                      <div class="chat-bubble user">Add a projects section with three cards.</div>
+                      <div class="chat-bubble ai">On it. I will update index.html and add the card styles.</div>
+                      <div class="chat-diff">
+                        <div class="diff-head"><span>index.html</span><span>+18 &minus;2</span></div>
+                        <div class="diff-row del">- &lt;!-- projects --&gt;</div>
+                        <div class="diff-row add">+ &lt;section class="projects"&gt;</div>
+                        <div class="diff-row add">+ &nbsp;&nbsp;&lt;article class="card"&gt;...&lt;/article&gt;</div>
+                        <div class="diff-row add">+ &lt;/section&gt;</div>
+                      </div>
+                      <div class="chat-input"><span>Ask Copilot or type a command&hellip;</span><span class="send"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></span></div>
+                    </div>
+                    <span class="shot-chip shot-chip--br"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> Changes applied with approval</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="fcard" id="fcard-ship" role="tabpanel" aria-labelledby="ftab-ship" data-fcard="2" data-peek="03 &middot; Build & Publish">
+                <div class="fcard-copy">
+                  <span class="eyebrow">Build &amp; publish</span>
+                  <h3>From preview to a live link or APK.</h3>
+                  <p>
+                    Publish a website to GitHub Pages, or compile and sign an Android APK on the
+                    device. Prefer another tool? Export the whole project as a ZIP.
+                  </p>
+                  <ul class="feature-list">
+                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> One-tap publish to GitHub Pages</li>
+                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> On-device APK build and signing</li>
+                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> ZIP export for Android Studio</li>
+                  </ul>
+                </div>
+                <div class="fcard-visual">
+                  <span class="fcard-mark" aria-hidden="true">03</span>
+                  <div class="shot">
+                    <div class="build-mock" aria-hidden="true">
+                      <div class="build-head">
+                        <span class="build-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span>
+                        <div><strong>Release complete</strong><span>Version 1.0.0 &middot; signed on device</span></div>
+                        <span class="pct">100%</span>
+                      </div>
+                      <div class="build-rows">
+                        <div class="build-row"><span class="ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span><strong>Website published</strong><span class="meta">princehacks.github.io</span></div>
+                        <div class="build-row"><span class="ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span><strong>Android APK signed</strong><span class="meta">app-release.apk</span></div>
+                        <div class="build-row"><span class="ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg></span><strong>ZIP export ready</strong><span class="meta">my-portfolio.zip</span></div>
+                      </div>
+                      <div class="progress"><i></i></div>
+                      <div class="folder-path">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+                        /storage/emulated/0/PrinceStudio/my-portfolio
+                      </div>
+                    </div>
+                    <span class="shot-chip shot-chip--br"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 6"/></svg> Works offline</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="fscroll-mobile-nav" role="group" aria-label="Feature cards">
+              <button type="button" data-fdir="-1" aria-label="Previous feature card">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <span class="fscroll-mobile-dots">
+                <button type="button" class="is-active" data-fdot="0" aria-label="Show Editor card" aria-current="true"></button>
+                <button type="button" data-fdot="1" aria-label="Show Copilot card"></button>
+                <button type="button" data-fdot="2" aria-label="Show Build and publish card"></button>
+              </span>
+              <button type="button" data-fdir="1" aria-label="Next feature card">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="templates">
+      <div class="wrap">
+        <div class="s-head reveal">
+          <span class="eyebrow">Templates</span>
+          <h2>Start with something real.</h2>
+          <p>Four starters, all plain HTML, CSS and JavaScript &mdash; edit every line.</p>
+        </div>
+        <div class="tpl-grid">
+          <a class="tpl reveal" href="templates/portfolio/index.html" aria-label="Open the Portfolio starter template">
+            <div class="tpl-shot tpl-shot--portfolio">
+              <div class="tpl-chrome">
+                <span class="tpl-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="tpl-url">aarav.design</span>
+              </div>
+              <div class="tpl-canvas">
+                <div class="tpl-top">
+                  <span class="tag">Portfolio</span>
+                  <span class="tpl-nav">Work / About</span>
+                </div>
+                <span class="tpl-orb" aria-hidden="true"></span>
+                <div class="tpl-copy">
+                  <span class="tpl-kicker">Selected work &middot; 2021&mdash;2025</span>
+                  <strong>Aarav.</strong>
+                  <span>Designer &amp; developer</span>
+                </div>
+              </div>
+            </div>
+            <div class="tpl-body">
+              <span class="tpl-name">Portfolio</span>
+              <span class="tpl-meta">
+                <span class="tpl-tag">Starter</span>
+                <span class="tpl-arrow" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+              </span>
+            </div>
+          </a>
+          <a class="tpl reveal" href="templates/restaurant/index.html" aria-label="Open the Restaurant starter template">
+            <div class="tpl-shot tpl-shot--restaurant">
+              <div class="tpl-chrome">
+                <span class="tpl-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="tpl-url">tandoor.in</span>
+              </div>
+              <div class="tpl-canvas">
+                <div class="tpl-top">
+                  <span class="tag">Restaurant</span>
+                  <span class="tpl-stamp">Est.<br />2024</span>
+                </div>
+                <div class="tpl-copy tpl-copy--center">
+                  <strong>Tandoor</strong>
+                  <span>Kitchen &amp; bar</span>
+                  <span class="lines" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span class="tpl-menu">Menu &nbsp;/&nbsp; Reserve</span>
+                </div>
+              </div>
+            </div>
+            <div class="tpl-body">
+              <span class="tpl-name">Restaurant</span>
+              <span class="tpl-meta">
+                <span class="tpl-tag">Starter</span>
+                <span class="tpl-arrow" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+              </span>
+            </div>
+          </a>
+          <a class="tpl reveal" href="templates/saas/index.html" aria-label="Open the SaaS landing starter template">
+            <div class="tpl-shot tpl-shot--saas">
+              <div class="tpl-chrome">
+                <span class="tpl-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="tpl-url">shipfast.app</span>
+              </div>
+              <div class="tpl-canvas">
+                <div class="tpl-top">
+                  <span class="tag">SaaS landing</span>
+                  <span class="tpl-nav">Log in</span>
+                </div>
+                <div class="tpl-copy tpl-copy--saas">
+                  <strong>Ship faster.<br />Look sharp.</strong>
+                  <span class="btn-mini">Start free</span>
+                </div>
+                <div class="tpl-chart" aria-hidden="true">
+                  <span class="tpl-chart-head"><i></i><i></i></span>
+                  <span class="tpl-bars"><i></i><i></i><i></i><i></i><i></i></span>
+                  <span class="tpl-chart-label">+28% this week</span>
+                </div>
+              </div>
+            </div>
+            <div class="tpl-body">
+              <span class="tpl-name">SaaS landing</span>
+              <span class="tpl-meta">
+                <span class="tpl-tag">Starter</span>
+                <span class="tpl-arrow" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+              </span>
+            </div>
+          </a>
+          <a class="tpl reveal" href="templates/blank/index.html" aria-label="Start a blank project">
+            <div class="tpl-shot tpl-shot--blank">
+              <div class="tpl-chrome">
+                <span class="tpl-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="tpl-url">new-project</span>
+              </div>
+              <div class="tpl-canvas tpl-canvas--blank">
+                <span class="tpl-file" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"/><path d="M14 3v6h6"/></svg></span>
+                <strong>index.html</strong>
+                <span>Empty file</span>
+              </div>
+            </div>
+            <div class="tpl-body">
+              <span class="tpl-name">Blank</span>
+              <span class="tpl-meta">
+                <span class="tpl-tag">Empty</span>
+                <span class="tpl-arrow" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="kinetic-band" aria-hidden="true">
+      <div class="kinetic-track">
+        <span>Design.</span><span>Build.</span><span>Ship.</span><span>Repeat.</span>
+        <span>Design.</span><span>Build.</span><span>Ship.</span><span>Repeat.</span>
+        <span>Design.</span><span>Build.</span><span>Ship.</span><span>Repeat.</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="providers-panel reveal">
+          <div>
+            <span class="eyebrow">AI copilot</span>
+            <h2>Your key. Your provider.</h2>
+            <p>
+              Pair the copilot with the provider you already use. Keys stay encrypted on
+              your device and go only to that provider.
+            </p>
+          </div>
+          <div class="chips" aria-label="Example supported AI providers">
+            <div class="chips-track">
+              <div class="chip-group">
+                <span class="chip">OpenRouter</span>
+                <span class="chip">Google Gemini</span>
+                <span class="chip">Groq</span>
+                <span class="chip">DeepSeek</span>
+                <span class="chip">Mistral</span>
+                <span class="chip">Cerebras</span>
+                <span class="chip">Together AI</span>
+                <span class="chip">Hugging Face</span>
+                <span class="chip">Cohere</span>
+                <span class="chip">xAI</span>
+                <span class="chip">Perplexity</span>
+                <span class="chip chip--more">+ 60 more presets</span>
+              </div>
+              <div class="chip-group" aria-hidden="true">
+                <span class="chip">OpenRouter</span>
+                <span class="chip">Google Gemini</span>
+                <span class="chip">Groq</span>
+                <span class="chip">DeepSeek</span>
+                <span class="chip">Mistral</span>
+                <span class="chip">Cerebras</span>
+                <span class="chip">Together AI</span>
+                <span class="chip">Hugging Face</span>
+                <span class="chip">Cohere</span>
+                <span class="chip">xAI</span>
+                <span class="chip">Perplexity</span>
+                <span class="chip chip--more">+ 60 more presets</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="faq-layout">
+          <div class="faq-aside reveal">
+            <span class="eyebrow">FAQ</span>
+            <h2>Questions, answered.</h2>
+            <p>Everything about price, accounts, files and Android support.</p>
+            <a class="link-arrow" href="support.html">
+              Talk to support
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+
+          <div class="faq-list reveal">
+            <details class="faq-item">
+              <summary>Is Prince Studio free?</summary>
+              <p>Yes. The app is free to download and use. If you connect an AI provider, that provider may charge for API usage &mdash; that cost goes to them, not us.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Will it work in India?</summary>
+              <p>Yes. Prince Studio is not region-locked and runs on any supported Android phone. In India, Google AI Studio and Groq both offer free API keys, and GitHub Pages works normally.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Do I need an account?</summary>
+              <p>No. Open the app and start a project. You only need a GitHub account if you choose to publish to GitHub Pages.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Does it work offline?</summary>
+              <p>The editor, preview and file management work offline. AI, publishing and the support form need an internet connection.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Will my files be uploaded somewhere?</summary>
+              <p>No. Projects stay on your phone unless you use a connected feature such as AI, publishing or export. See the <a href="privacy.html">privacy policy</a> for details.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Why is it not on the Play Store?</summary>
+              <p>Prince Studio is distributed as a signed APK directly from this site, so updates are not delayed by store review. You install it once; future versions install the same way.</p>
+            </details>
+            <details class="faq-item">
+              <summary>What Android version do I need?</summary>
+              <p>Android 7.0 (API 24) or newer.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="wrap">
+        <div class="cta reveal">
+          <div class="cta-copy">
+            <span class="eyebrow">Download</span>
+            <h2>Put a dev studio in your pocket.</h2>
+            <p>Free for Android 7.0 and newer. No account, no ads, no subscription &mdash; and no Play Store review queue.</p>
+            <div class="cta-meta">
+              <span>v1.0.0</span>
+              <span>4.8 MB</span>
+              <span>Signed APK</span>
+              <span>No account</span>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn--light btn--lg" href="downloads/Prince-Studio-v1.0.0.apk" download>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+                Download APK
+              </a>
+              <a class="btn btn--ghost-light btn--lg" href="features.html#release">Release notes</a>
+            </div>
+          </div>
+          <div class="cta-qr">
+            <div class="cta-qr-head">
+              <span class="cta-app">
+                <img class="cta-app-icon" src="assets/icons/icon-192.png" alt="" width="34" height="34" loading="lazy" />
+                <span class="cta-app-name"><strong>Prince Studio</strong><em>Android app</em></span>
+              </span>
+              <span class="cta-qr-badge"><i aria-hidden="true"></i>APK</span>
+            </div>
+            <div class="cta-qr-body">
+              <button class="qr-card" type="button" data-qr-open aria-haspopup="dialog" aria-controls="qrModal" aria-label="Open full-size QR code">
+                <img src="assets/images/qr-download.png" alt="QR code linking to the Prince Studio website" width="148" height="148" />
+              </button>
+              <div class="cta-qr-copy">
+                <strong>Scan to open</strong>
+                <small>Scan with your camera, or tap the QR to enlarge and download.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="qr-modal" id="qrModal" aria-labelledby="qrModalTitle" aria-describedby="qrModalCopy">
+      <div class="qr-modal-panel">
+        <div class="qr-modal-head">
+          <div class="qr-modal-title">
+            <span class="eyebrow">Full-size QR</span>
+            <h2 id="qrModalTitle">Prince Studio</h2>
+          </div>
+          <button class="qr-modal-close" type="button" data-qr-close aria-label="Close QR code">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+        <div class="qr-modal-code">
+          <img src="assets/images/qr-download.png" alt="Prince Studio website QR code" width="400" height="400" />
+        </div>
+        <p class="qr-modal-copy" id="qrModalCopy">Scan the code to open Prince Studio, or download it to scan later and share.</p>
+        <div class="qr-modal-actions">
+          <a class="qr-modal-download" href="assets/images/qr-download.png" download="prince-studio-qr.png">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+            Download QR
+          </a>
+          <button class="qr-modal-dismiss" type="button" data-qr-close>Close</button>
+        </div>
+      </div>
+    </dialog>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-mark"><img src="assets/icons/nav-icon.png" alt="" width="28" height="28" loading="lazy" /></span>
+            <span>Prince Studio</span>
+          </a>
+          <p>Design. Build. Ship. A mobile code editor for makers who build on the go.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="features.html">Features</a>
+          <a href="downloads/Prince-Studio-v1.0.0.apk" download>Download</a>
+          <a href="index.html#faq">Questions &amp; answers</a>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <a href="support.html">Contact</a>
+          <a href="support.html#bugs">Report a bug</a>
+          <a href="support.html#features">Request a feature</a>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <a href="privacy.html">Privacy policy</a>
+          <a href="privacy.html#terms">Terms of use</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Prince Studio. All rights reserved.</span>
+        <span>No cookies &middot; No trackers &middot; Made with Prince Studio</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
