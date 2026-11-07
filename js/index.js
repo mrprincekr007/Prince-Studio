@@ -715,13 +715,14 @@
   var indexLabel = section.querySelector('[data-findex]');
   var liquid = section.querySelector('.fscroll-liquid');
   var liquidTimer = 0;
-  var desktop = window.matchMedia('(min-width: 900px)');
+  var desktop = window.matchMedia('(min-width: 900px) and (min-height: 620px) and (orientation: landscape)');
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
   var active = 0;
   var enhanced = false;
   var scheduled = false;
   var scrollLock = false;
   var lockTimer = 0;
+  var revealObserver = null;
 
   if (!cards.length || !pin) return;
 
@@ -866,11 +867,54 @@
     if (focusTab !== false && tabs[index]) tabs[index].focus({ preventScroll: true });
   };
 
+  var clearReveal = function () {
+    if (revealObserver) {
+      revealObserver.disconnect();
+      revealObserver = null;
+    }
+    section.classList.remove('is-reveal-ready');
+    cards.forEach(function (card) {
+      card.classList.remove('is-revealed');
+      card.style.transitionDelay = '';
+    });
+  };
+
+  var setupReveal = function () {
+    if (revealObserver || reduced.matches || !('IntersectionObserver' in window)) return;
+
+    section.classList.add('is-reveal-ready');
+    revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var index = cards.indexOf(entry.target);
+        entry.target.style.transitionDelay = (Math.max(0, index) * 80) + 'ms';
+        entry.target.classList.add('is-revealed');
+        window.setTimeout(function () {
+          entry.target.style.transitionDelay = '';
+        }, 900 + Math.max(0, index) * 80);
+        if (revealObserver) revealObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+    cards.forEach(function (card) {
+      revealObserver.observe(card);
+    });
+  };
+
+  var syncReveal = function () {
+    if (enhanced || reduced.matches) {
+      clearReveal();
+      return;
+    }
+    setupReveal();
+  };
+
   var applyMode = function () {
     var shouldEnhance = desktop.matches && !reduced.matches;
 
     if (shouldEnhance === enhanced) {
       if (enhanced) schedule();
+      syncReveal();
       return;
     }
 
@@ -888,6 +932,8 @@
       });
       if (progress) progress.style.transform = '';
     }
+
+    syncReveal();
   };
 
   tabs.forEach(function (tab) {

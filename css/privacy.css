@@ -5647,7 +5647,7 @@ p { margin: 0; }
 .pv-hero {
   position: relative;
   z-index: 1;
-  padding: calc(var(--header-offset) + 52px) 0 0;
+  padding: calc(var(--header-offset) + 38px) 0 0;
   border-bottom: 1px solid var(--line);
   border-radius: 0 0 var(--section-round) var(--section-round);
   background: var(--bg);
@@ -7063,7 +7063,7 @@ p { margin: 0; }
   .pv-doc { max-width: none; }
 }
 
-@media (min-width: 981px) {
+@media (min-width: 900px) {
   .pv-hero-stage {
     width: min(100%, 980px);
     padding: 44px 28px;
@@ -7131,7 +7131,7 @@ p { margin: 0; }
 }
 
 @media (max-width: 820px) {
-  .pv-hero { padding-top: calc(var(--header-offset) + 40px); }
+  .pv-hero { padding-top: calc(var(--header-offset) + 34px); }
   .pv-hero h1 { font-size: clamp(43px, 8.2vw, 64px); }
   .pv-hero .lead { font-size: 16px; }
   .pv-section { padding: 70px 0; }
@@ -7212,6 +7212,7 @@ p { margin: 0; }
 }
 
 @media (max-width: 560px) {
+  .pv-hero { padding-top: calc(var(--header-offset) + 40px); }
   .pv-hero-grid { gap: 30px; padding-bottom: 36px; }
   .pv-kicker { margin-top: 18px; }
   .pv-hero h1 { margin-top: 16px; font-size: clamp(41px, 12vw, 52px); }
