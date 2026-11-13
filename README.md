@@ -26,7 +26,7 @@ Plain static HTML/CSS/JS — no build step, no dependencies. Just upload the fol
 │   ├── images/             social preview + download QR
 │   └── source/             original high-res icon artwork (not loaded by the site)
 ├── downloads/
-│   └── Prince-Studio-v1.0.0.apk
+│   └── Prince Studio v1.0.1.apk
 ├── robots.txt
 ├── site.webmanifest
 └── sitemap.xml
@@ -44,11 +44,11 @@ Plain static HTML/CSS/JS — no build step, no dependencies. Just upload the fol
 The APK lives at:
 
 ```
-downloads/Prince-Studio-v1.0.0.apk
+downloads/Prince Studio v1.0.1.apk
 ```
 
 All download buttons point to that file. To ship a new build:
-1. Put the new APK in `downloads/` (e.g. `Prince-Studio-v1.1.0.apk`).
+1. Put the new APK in `downloads/` (e.g. `Prince Studio v1.1.0.apk`).
 2. Update the `href` on the ticker, nav, hero and release sections of `index.html` and `features.html`.
 3. Update the version number, build number, size and release notes text on those pages.
 
